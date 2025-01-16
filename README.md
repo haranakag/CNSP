@@ -33,7 +33,7 @@ Whenever we want to send something over the internet using the TCP/IP Model, the
 
 The diagrammatic comparison of the TCP/IP and OSI model is as follows:
 
-![](TCPIP and OSI.png)  
+<img src="TCPIP and OSI.png"> 
 *TCP/IP and OSI*
 
 #### **1\. Network Access Layer**
@@ -259,7 +259,7 @@ Data flows through the OSI model in a step-by-step process:
 
 Each layer adds specific information to ensure the data reaches its destination correctly, and these steps are reversed upon arrival.
 
-![Data Flow in OSI model](OSI Model.png)
+<img src="OSI Model.png">
 
 We can understand how data flows through OSI Model with the help of an example mentioned below.
 
@@ -363,7 +363,7 @@ IPv4 Address Format is a 32-bit Address that comprises binary digits separated b
 * Fragmentation : IPv4 allows routers to fragment packets, which can lead to inefficiencies and increased chances of data being lost or corrupted.  
 * Broadcasting Overhead : IPv4 uses broadcasting to communicate with multiple devices on a network, which can create unnecessary network traffic and reduce performance.
 
-## ![](IPv4 x IPv6.png)
+<img src="IPv4 x IPv6.png">
 
 ### What is IPv6?
 
@@ -450,7 +450,7 @@ The recent Version of IP IPv6 has a greater advantage over IPv4. Here are some o
 
 In computer network it is very important to understand the difference between devices like hubs, switches, and routers. These devices play an important role in how data is transferred across networks, affecting everything from speed and efficiency to security. In this article we will see basic differences between these devices, how they work within the OSI model, and where their use cases are applicable.
 
-![connectivity devices](Router Hub Switch.png)
+<img src="Router Hub Switch.png">
 
 ## **What is Hub?**
 
@@ -739,7 +739,7 @@ Cryptography is a technique of securing communication by converting plain text i
 
 Cryptography is a technique of securing information and communications through the use of codes so that only those persons for whom the information is intended can understand and process it. Thus preventing unauthorized access to information. The prefix “crypt” means “hidden” and the suffix “graphy” means “writing”. In Cryptography, the techniques that are used to protect information are obtained from mathematical concepts and a set of rule-based calculations known as algorithms to convert messages in ways that make it hard to decode them. These algorithms are used for cryptographic key generation, digital signing, and verification to protect data privacy, web browsing on the internet and to protect confidential transactions such as credit card and debit card transactions.
 
-C![crptography](Cryptography.png)
+<img src="Cryptography.png">
 
 ### Features Of Cryptography
 
@@ -756,7 +756,7 @@ C![crptography](Cryptography.png)
 
 It is an encryption system where the sender and receiver of a message use a single common key to encrypt and decrypt messages. [Symmetric Key cryptography](https://www.geeksforgeeks.org/what-is-a-symmetric-encryption/) is faster and simpler but the problem is that the sender and receiver have to somehow exchange keys securely. The most popular symmetric key cryptography systems are [Data Encryption Systems (DES)](https://www.geeksforgeeks.org/data-encryption-standard-des-set-1/) and [Advanced Encryption Systems (AES)](https://www.geeksforgeeks.org/advanced-encryption-standard-aes/) .
 
-![Symmetric Key Cryptography](Symmetric Key Cryptography.png)  
+<img src="Symmetric Key Cryptography.png">  
 Symmetric Key Cryptography
 
 #### 2\. Hash Functions
@@ -767,7 +767,7 @@ There is no usage of any key in this algorithm. A hash value with a fixed length
 
 In [Asymmetric Key Cryptography,](https://www.geeksforgeeks.org/asymmetric-key-cryptography/) a pair of keys is used to encrypt and decrypt information. A sender’s public key is used for encryption and a receiver’s private key is used for decryption. Public keys and Private keys are different. Even if the public key is known by everyone the intended receiver can only decode it because he alone knows his private key. The most popular asymmetric key cryptography algorithm is the RSA algorithm.
 
-## ![](Asymmetric Key Cryptography.png)
+## <img src="Asymmetric Key Cryptography.png">
 
 Asymmetric Key Cryptography
 
