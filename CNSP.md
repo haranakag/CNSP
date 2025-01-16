@@ -33,7 +33,7 @@ Whenever we want to send something over the internet using the TCP/IP Model, the
 
 The diagrammatic comparison of the TCP/IP and OSI model is as follows:
 
-![][image1]  
+![][TCPIP and OSI.png]  
 *TCP/IP and OSI*
 
 #### **1\. Network Access Layer**
@@ -149,9 +149,6 @@ There are 7 layers in the OSI Model and each layer has its specific role in hand
 
 The lowest layer of the OSI reference model is the Physical Layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. Physical Layer is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together. Common physical layer devices are [Hub](https://www.geeksforgeeks.org/what-is-network-hub-and-how-it-works/), [Repeater](https://www.geeksforgeeks.org/repeaters-in-computer-network/), [Modem](https://www.geeksforgeeks.org/difference-between-modem-and-router/), and [Cables](https://www.geeksforgeeks.org/types-of-ethernet-cable/).
 
-![physical-layer-in-OSI][image3]  
-Physical Layer
-
 Functions of the Physical Layer
 
 * Bit Synchronization: The physical layer provides the synchronization of the bits by providing a clock. This clock controls both sender and receiver thus providing synchronization at the bit level.  
@@ -223,9 +220,6 @@ Example
 
 Let us consider a scenario where a user wants to send a message through some Messenger application running in their browser. The “Messenger” here acts as the application layer which provides the user with an interface to create the data. This message or so-called Data is compressed, optionally encrypted (if the data is sensitive), and converted into bits (0’s and 1’s) so that it can be transmitted.
 
-![Communication in Session Layer][image4]  
-Communication in Session Layer
-
 #### Layer 6 – Presentation Layer
 
 The presentation layer is also called the Translation layer. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network. Protocols used in the Presentation Layer are [JPEG](https://www.geeksforgeeks.org/difference-between-jpeg-and-png/), [MPEG](https://www.geeksforgeeks.org/mpeg-full-form/), [GIF](https://www.geeksforgeeks.org/what-is-a-gif-file/), [TLS/SSL](https://www.geeksforgeeks.org/difference-between-secure-socket-layer-ssl-and-transport-layer-security-tls/), etc.
@@ -239,9 +233,6 @@ Functions of the Presentation Layer
 #### Layer 7 – Application Layer
 
 At the very top of the OSI Reference Model stack of layers, we find the Application layer which is implemented by the network applications. These applications produce the data to be transferred over the network. This layer also serves as a window for the application services to access the network and for displaying the received information to the user. Protocols used in the Application layer are [SMTP](https://www.geeksforgeeks.org/simple-mail-transfer-protocol-smtp/), [FTP](https://www.geeksforgeeks.org/file-transfer-protocol-ftp-in-application-layer/), [DNS](https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/), etc.
-
-![application-layer-in-OSI][image5]  
-Application Layer
 
 Functions of the Application Layer
 
@@ -268,7 +259,7 @@ Data flows through the OSI model in a step-by-step process:
 
 Each layer adds specific information to ensure the data reaches its destination correctly, and these steps are reversed upon arrival.
 
-![Data Flow in OSI model][image6]
+![Data Flow in OSI model][OSI Model.png]
 
 We can understand how data flows through OSI Model with the help of an example mentioned below.
 
@@ -321,9 +312,6 @@ As the modern Internet does not prefer the OSI Model, but still, the OSI Model i
 | Protocols at each layer is independent of the other layer. | Layers are integrated, some layers are required by other layers of TCP/IP model. |
 | OSI Model is a conceptual framework, less used in practical applications. | Widely used in actual networks like Internet and Communication Systems. |
 
-![OSI-vs-TCP/IP][image7]  
-OSI vs TCP/IP
-
 ### Advantages of OSI Model
 
 The OSI Model defines the communication of a computing system into 7 different layers. Its advantages include:
@@ -352,9 +340,6 @@ IPv4, or Internet Protocol version 4, is the original addressing system of the I
 
 IPv4 Address Format is a 32-bit Address that comprises binary digits separated by a dot (.).
 
-![IPv4 Address Format][image8]  
-IPv4 Address Format
-
 ### **Characteristics of IPv4**
 
 * 32-bit address length: Allows for approximately 4.3 billion unique addresses.  
@@ -378,7 +363,7 @@ IPv4 Address Format
 * Fragmentation : IPv4 allows routers to fragment packets, which can lead to inefficiencies and increased chances of data being lost or corrupted.  
 * Broadcasting Overhead : IPv4 uses broadcasting to communicate with multiple devices on a network, which can create unnecessary network traffic and reduce performance.
 
-## ![][image9]
+## ![][IPv4 x IPv6.png]
 
 ### What is IPv6?
 
@@ -389,10 +374,6 @@ IPv6 stands for Internet Protocol version 6\. IPv6 is the new version of Interne
 ### IPv6 Address Format
 
 IPv6 Address Format is a 128-bit IP Address, which is written in a group of 8 hexadecimal numbers separated by colon (:).
-
-![IPv6 Address Format][image10]
-
-IPv6 Address Format
 
 To switch from IPv4 to IPv6, there are several strategies:
 
@@ -469,7 +450,7 @@ The recent Version of IP IPv6 has a greater advantage over IPv4. Here are some o
 
 In computer network it is very important to understand the difference between devices like hubs, switches, and routers. These devices play an important role in how data is transferred across networks, affecting everything from speed and efficiency to security. In this article we will see basic differences between these devices, how they work within the OSI model, and where their use cases are applicable.
 
-![connectivity devices][image11]
+![connectivity devices][Router Hub Switch.png]
 
 ## **What is Hub?**
 
@@ -758,7 +739,7 @@ Cryptography is a technique of securing communication by converting plain text i
 
 Cryptography is a technique of securing information and communications through the use of codes so that only those persons for whom the information is intended can understand and process it. Thus preventing unauthorized access to information. The prefix “crypt” means “hidden” and the suffix “graphy” means “writing”. In Cryptography, the techniques that are used to protect information are obtained from mathematical concepts and a set of rule-based calculations known as algorithms to convert messages in ways that make it hard to decode them. These algorithms are used for cryptographic key generation, digital signing, and verification to protect data privacy, web browsing on the internet and to protect confidential transactions such as credit card and debit card transactions.
 
-C![crptography][image12]
+C![crptography][Cryptography.png]
 
 ### Features Of Cryptography
 
@@ -775,7 +756,7 @@ C![crptography][image12]
 
 It is an encryption system where the sender and receiver of a message use a single common key to encrypt and decrypt messages. [Symmetric Key cryptography](https://www.geeksforgeeks.org/what-is-a-symmetric-encryption/) is faster and simpler but the problem is that the sender and receiver have to somehow exchange keys securely. The most popular symmetric key cryptography systems are [Data Encryption Systems (DES)](https://www.geeksforgeeks.org/data-encryption-standard-des-set-1/) and [Advanced Encryption Systems (AES)](https://www.geeksforgeeks.org/advanced-encryption-standard-aes/) .
 
-![Symmetric Key Cryptography][image13]  
+![Symmetric Key Cryptography][Symmetric Key Cryptography.png]  
 Symmetric Key Cryptography
 
 #### 2\. Hash Functions
@@ -786,7 +767,7 @@ There is no usage of any key in this algorithm. A hash value with a fixed length
 
 In [Asymmetric Key Cryptography,](https://www.geeksforgeeks.org/asymmetric-key-cryptography/) a pair of keys is used to encrypt and decrypt information. A sender’s public key is used for encryption and a receiver’s private key is used for decryption. Public keys and Private keys are different. Even if the public key is known by everyone the intended receiver can only decode it because he alone knows his private key. The most popular asymmetric key cryptography algorithm is the RSA algorithm.
 
-## ![][image14]
+## ![][Asymmetric Key Cryptography.png]
 
 Asymmetric Key Cryptography
 
