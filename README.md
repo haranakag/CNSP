@@ -4,8 +4,8 @@
   </a>
 </p>
 
-## [ENGLISH VERSION](ingles)
-## [VERSÃO PORTUGUÊS-BR](TCP/IP (princípios básicos de protocolos e redes))
+## [ENGLISH VERSION](#tcpip-protocols-and-networking-basics)
+## [VERSÃO PORTUGUÊS-BR](#tcpip-principios-basicos-de-protocolos-e-redes)
 
 
 ## [TCP/IP (Protocols and Networking Basics)](#ingles)
