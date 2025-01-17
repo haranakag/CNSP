@@ -2094,88 +2094,143 @@ Securely storing passwords is critical for individual users and organizations al
 ------------------------------------------------------------------------------------------------------------------------------
 
 ## TCP/IP (princípios básicos de protocolos e redes)
-O modelo TCP/IP é uma estrutura fundamental para redes de computadores. Significa Transmission Control Protocol/Internet Protocol, que são os principais protocolos da Internet. Esse modelo define como os dados são transmitidos pelas redes, garantindo uma comunicação confiável entre dispositivos. Ela consiste em quatro camadas: a camada de link, a camada de Internet, a camada de transporte e a camada de aplicação. Cada camada tem funções específicas que ajudam a gerenciar diferentes aspectos da comunicação de rede, tornando-a essencial para entender e trabalhar com redes modernas.
+O modelo TCP/IP é uma framework fundamental para redes de computadores. Significa Transmission Control Protocol/Internet Protocol, que são os principais protocolos da Internet. Esse modelo define como os dados são transmitidos pelas redes, garantindo uma comunicação confiável entre dispositivos. Ela consiste em quatro camadas: a camada de link, a camada de Internet, a camada de transporte e a camada de aplicação. Cada camada tem funções específicas que ajudam a gerenciar diferentes aspectos da comunicação de rede, tornando-a essencial para entender e trabalhar com redes modernas.
+
 O TCP/IP foi projetado e desenvolvido pelo Departamento de Defesa (DoD) na década de 1960 e é baseado em protocolos padrão. O modelo TCP/IP é uma versão concisa do modelo OSI. Ele contém quatro camadas, ao contrário das sete camadas do modelo OSI. Neste artigo, discutiremos o modelo TCP/IP em detalhes.
+
 O modelo TCP/IP foi desenvolvido junto com a criação da ARPANET, que mais tarde se tornou a base da Internet moderna. Ele foi projetado com foco nos aspectos práticos da rede na época. Os detalhes de hardware de nível inferior e o meio de transmissão física foram amplamente abstraídos em favor de protocolos de rede de nível superior.
-O que o TCP/IP faz?
-O principal trabalho do TCP/IP é transferir os dados de um computador de um dispositivo para outro. A principal condição desse processo é tornar os dados confiáveis e precisos para que o destinatário receba as mesmas informações enviadas pelo remetente. Para garantir que cada mensagem chegue ao destino final com precisão, o modelo TCP/IP divide seus dados em pacotes e os combina na outra extremidade, o que ajuda a manter a precisão dos dados durante a transferência de uma extremidade para outra. O modelo TCP/IP é usado no contexto da Internet do mundo real, onde uma ampla variedade de mídias físicas e tecnologias de rede estão em uso. Em vez de especificar uma camada física específica, o modelo TCP/IP permite flexibilidade na adaptação a diferentes implementações físicas.
-Diferença entre TCP e IP
-Característica	TCP (Protocolo de Controle de Transmissão)	IP (Protocolo de Internet)
-Propósito	Garante a entrega confiável, ordenada e verificada com erros de dados entre aplicativos.	Fornece endereçamento e roteamento de pacotes em redes.
-Tipo	Orientado à conexão	Sem conexão
-Função	Gerencia a transmissão de dados entre dispositivos, garantindo a integridade e a ordem dos dados.	Encaminha pacotes de dados da origem para o destino com base nos endereços IP.
-Tratamento de erros	Sim, inclui mecanismos de verificação e recuperação de erros.	Não, o IP em si não lida com erros; depende de protocolos de camada superior, como o TCP.
-Controle de fluxo	Sim, inclui mecanismos de controle de fluxo.	Não
-Controle de congestionamento	Sim, gerencia o congestionamento da rede.	Não
-Segmentação de dados	Divide os dados em pacotes menores e os remonta no destino.	Divide os dados em pacotes, mas não processa a remontagem.
-Tamanho do cabeçalho	Maior, 20-60 bytes	Menor, normalmente 20 bytes
-Confiabilidade	Proporciona transferência de dados confiável	Não garante entrega, confiabilidade ou pedido.
-Confirmação de transmissão	Sim, confirma o recebimento dos pacotes de dados.	Não
-Como funciona o modelo TCP/IP?
-Sempre que queremos enviar algo pela Internet usando o modelo TCP/IP, o modelo TCP/IP divide os dados em pacotes na extremidade do remetente e os mesmos pacotes precisam ser recombinados na extremidade do receptor para formar os mesmos dados, e isso acontece para manter a precisão dos dados. O modelo TCP/IP divide os dados em um procedimento de 4 camadas, em que os dados primeiro entram nessa camada em uma ordem e novamente na ordem inversa para serem organizados da mesma forma na extremidade do receptor.
+
+### **O que o TCP/IP faz?**
+
+O principal trabalho do TCP/IP é transferir os dados de um computador de um dispositivo para outro. A principal condição desse processo é tornar os dados confiáveis e precisos para que o destinatário receba as mesmas informações enviadas pelo remetente. Para garantir que cada mensagem chegue ao destino final com precisão, o modelo TCP/IP divide seus dados em pacotes e os combina na outra extremidade, o que ajuda a manter a precisão dos dados durante a transferência de uma extremidade para outra. 
+
+O modelo TCP/IP é usado no contexto da Internet do mundo real, onde uma ampla variedade de mídias físicas e tecnologias de rede estão em uso. Em vez de especificar uma camada física específica, o modelo TCP/IP permite flexibilidade na adaptação a diferentes implementações físicas.
+
+### **Diferença entre TCP e IP**
+
+| Característica	| TCP (Protocolo de Controle de Transmissão)	| IP (Protocolo de Internet) |
+| :---: | ----- | ----- |
+| **Propósito** |	Garante a entrega confiável, ordenada e verificada com erros de dados entre aplicativos. | Fornece endereçamento e roteamento de pacotes em redes.
+| **Tipo** |	Orientado à conexão | Sem conexão
+| **Função** |	Gerencia a transmissão de dados entre dispositivos, garantindo a integridade e a ordem dos dados. | Encaminha pacotes de dados da origem para o destino com base nos endereços IP.
+| **Tratamento de erros** |	Sim, inclui mecanismos de verificação e recuperação de erros. | Não, o IP em si não lida com erros; depende de protocolos de camada superior, como o TCP.
+| **Controle de fluxo** |	Sim, inclui mecanismos de controle de fluxo. | Não
+| **Controle de congestionamento** |	Sim, gerencia o congestionamento da rede. | Não
+| **Segmentação de dados** |	Divide os dados em pacotes menores e os remonta no destino. | Divide os dados em pacotes, mas não processa a remontagem.
+| **Tamanho do cabeçalho** |	Maior, 20-60 bytes | Menor, normalmente 20 bytes
+| **Confiabilidade** |	Proporciona transferência de dados confiável | Não garante entrega, confiabilidade ou pedido.
+| **Confirmação de transmissão** |	Sim, confirma o recebimento dos pacotes de dados. | Não
+
+###
+
+### **Como funciona o modelo TCP/IP?**
+
+Sempre que queremos enviar algo pela Internet usando o modelo TCP/IP, o modelo TCP/IP divide os dados em pacotes na extremidade do remetente e os mesmos pacotes precisam ser recombinados na extremidade do receptor para formar os mesmos dados, e isso acontece para manter a precisão dos dados. 
+
+O modelo TCP/IP divide os dados em um procedimento de 4 camadas, em que os dados primeiro entram nessa camada em uma ordem e novamente na ordem inversa para serem organizados da mesma forma na extremidade do receptor.
+
 A comparação diagramática do modelo TCP/IP e OSI é a seguinte:
- 
+
+<img src="TCPIP and OSI.png">  
 *TCP/IP e OSI*
-1. Camada de acesso à rede
+
+#### **1\. Camada de acesso à rede**
+
 É um grupo de aplicativos que exigem comunicações de rede. Essa camada é responsável por gerar os dados e solicitar conexões. Ele age em nome do remetente e da camada de acesso à rede em nome do destinatário. Durante este artigo, falaremos em nome do destinatário.
 O tipo de protocolo de rede do pacote, nesse caso, TCP/IP, é identificado pela camada de acesso à rede. A prevenção de erros e o “enquadramento” também são fornecidos por essa camada. O enquadramento do Protocolo Point-to-Point (PPP) e o enquadramento Ethernet IEEE 802.2 são dois exemplos de protocolos de camada de enlace de dados.
-2. Internet ou camada de rede
+
+#### **2\. Internet ou camada de rede**
+
 Essa camada é paralela às funções da camada de rede do OSI. Ele define os protocolos responsáveis pela transmissão lógica de dados em toda a rede. Os principais protocolos que residem nessa camada são os seguintes:
+
 •	IP: IP significa Internet Protocol e é responsável por entregar pacotes do host de origem para o host de destino, observando os endereços IP nos cabeçalhos dos pacotes. O IP tem duas versões: IPv4 e IPv6. O IPv4 é o que a maioria dos sites está usando atualmente. Mas o IPv6 está crescendo à medida que o número de endereços IPv4 é limitado em número quando comparado ao número de usuários.
 •	ICMP: ICMP significa Internet Control Message Protocol. Ele é encapsulado em datagramas IP e é responsável por fornecer aos hosts informações sobre problemas de rede.
 •	ARP: ARP significa Protocolo de Resolução de Endereços. Seu trabalho é encontrar o endereço de hardware de um host a partir de um endereço IP conhecido. O ARP tem vários tipos: ARP reverso, ARP proxy, ARP gratuito e ARP inverso.
+
 A camada da Internet é uma camada no pacote IP (Internet Protocol), que é o conjunto de protocolos que definem a Internet. A camada da Internet é responsável por rotear pacotes de dados de um dispositivo para outro em uma rede. Isso é feito atribuindo a cada dispositivo um endereço IP exclusivo, usado para identificar o dispositivo e determinar a rota que os pacotes devem seguir para alcançá-lo.
-Exemplo: Imagine que você está usando um computador para enviar um e-mail para um amigo. Quando você clica em “enviar”, o e-mail é dividido em pacotes menores de dados, que são então enviados para a camada da Internet para roteamento. A camada da Internet atribui um endereço IP a cada pacote e usa tabelas de roteamento para determinar a melhor rota para o pacote seguir para chegar ao seu destino. O pacote é então encaminhado para o próximo salto em sua rota até chegar ao destino. Quando todos os pacotes tiverem sido entregues, o computador do seu amigo poderá reuni-los novamente na mensagem de e-mail original.
+
+**Exemplo:** Imagine que você está usando um computador para enviar um e-mail para um amigo. Quando você clica em “enviar”, o e-mail é dividido em pacotes menores de dados, que são então enviados para a camada da Internet para roteamento. A camada da Internet atribui um endereço IP a cada pacote e usa tabelas de roteamento para determinar a melhor rota para o pacote seguir para chegar ao seu destino. O pacote é então encaminhado para o próximo salto em sua rota até chegar ao destino. Quando todos os pacotes tiverem sido entregues, o computador do seu amigo poderá reuni-los novamente na mensagem de e-mail original.
+
 Neste exemplo, a camada da Internet desempenha um papel crucial na entrega do e-mail do seu computador para o computador do seu amigo. Ele usa endereços IP e tabelas de roteamento para determinar a melhor rota para os pacotes e garante que os pacotes sejam entregues ao destino correto. Sem a camada da Internet, não seria possível enviar dados pela Internet.
-3. Camada de transporte
+
+#### **3\. Camada de transporte**
+
 Os protocolos da camada de transporte TCP/IP trocam confirmações de recebimento de dados e retransmitem pacotes perdidos para garantir que os pacotes cheguem em ordem e sem erros. A comunicação de ponta a ponta é chamada assim. O Transmission Control Protocol (TCP) e o User Datagram Protocol são protocolos de camada de transporte nesse nível (UDP).
+
 •	TCP: os aplicativos podem interagir uns com os outros usando o TCP como se estivessem fisicamente conectados por um circuito. O TCP transmite dados de uma forma que se assemelha à transmissão caractere por caractere, em vez de pacotes separados. Um ponto de partida que estabelece a conexão, toda a transmissão em ordem de bytes e um ponto final que fecha a conexão compõem essa transmissão.
 •	UDP: O serviço de entrega de datagramas é fornecido pelo UDP, o outro protocolo da camada de transporte. As conexões entre os hosts de recebimento e envio não são verificadas pelo UDP. Os aplicativos que transportam pequenas quantidades de dados usam UDP em vez de TCP, pois isso elimina os processos de estabelecimento e validação de conexões.
-4. Camada de aplicação
+
+#### **4\. Camada de aplicação**
+
 Essa camada é análoga à camada de transporte do modelo OSI. É responsável pela comunicação de ponta a ponta e pela entrega de dados sem erros. Ele protege os aplicativos da camada superior das complexidades dos dados. Os três principais protocolos presentes nessa camada são:
+
 •	HTTP e HTTPS: HTTP significa protocolo de transferência de hipertexto. Ele é usado pela World Wide Web para gerenciar as comunicações entre navegadores e servidores da Web. HTTPS significa HTTP-secure. É uma combinação de HTTP com SSL (Secure Socket Layer). É eficiente nos casos em que o navegador precisa preencher formulários, fazer login, autenticar e realizar transações bancárias.
 •	SSH: SSH significa Secure Shell. É um software de emulações de terminal semelhante ao Telnet. O motivo pelo qual o SSH é preferido é por causa de sua capacidade de manter a conexão criptografada. Ele configura uma sessão segura por meio de uma conexão TCP/IP.
 •	NTP: NTP significa Network Time Protocol. Ele é usado para sincronizar os relógios do nosso computador com uma fonte de horário padrão. É muito útil em situações como transações bancárias. Suponha a seguinte situação sem a presença do NTP. Suponha que você realize uma transação em que seu computador lê a hora às 14h30, enquanto o servidor a registra às 14h28. O servidor pode falhar gravemente se estiver fora de sincronia.
+
 A camada host a host é uma camada no modelo OSI (Open Systems Interconnection) responsável por fornecer comunicação entre hosts (computadores ou outros dispositivos) em uma rede. Também é conhecida como camada de transporte.
 Alguns casos de uso comuns da camada de host para host incluem:
+
 •	Transferência confiável de dados: a camada de host para host garante que os dados sejam transferidos de forma confiável entre os hosts usando técnicas como correção de erros e controle de fluxo. Por exemplo, se um pacote de dados for perdido durante a transmissão, a camada de host para host pode solicitar que o pacote seja retransmitido para garantir que todos os dados sejam recebidos corretamente.
 •	Segmentação e remontagem: a camada de host para host é responsável por dividir grandes blocos de dados em segmentos menores que podem ser transmitidos pela rede e, em seguida, reagrupar os dados no destino. Isso permite que os dados sejam transmitidos com mais eficiência e ajuda a evitar a sobrecarga da rede.
 •	Multiplexação e demultiplexação: a camada host a host é responsável por multiplexar dados de várias fontes em uma única conexão de rede e, em seguida, demultiplexar os dados no destino. Isso permite que vários dispositivos compartilhem a mesma conexão de rede e ajuda a melhorar a utilização da rede.
 •	Comunicação de ponta a ponta: a camada de host a host fornece um serviço orientado à conexão que permite que os hosts se comuniquem entre si de ponta a ponta, sem a necessidade de dispositivos intermediários envolvidos na comunicação.
-Exemplo: considere uma rede com dois hosts, A e B. O host A deseja enviar um arquivo para o host B. A camada host-to-host no host A dividirá o arquivo em segmentos menores, adicionará informações de correção de erros e controle de fluxo e, em seguida, transmitirá os segmentos pela rede para o host B. A camada host-to-host no host B receberá os segmentos, verificará se há erros e remontará o arquivo. Depois que o arquivo for transferido com sucesso, a camada host a host no host B confirmará o recebimento do arquivo no host A.
+
+**Exemplo:** considere uma rede com dois hosts, A e B. O host A deseja enviar um arquivo para o host B. A camada host-to-host no host A dividirá o arquivo em segmentos menores, adicionará informações de correção de erros e controle de fluxo e, em seguida, transmitirá os segmentos pela rede para o host B. A camada host-to-host no host B receberá os segmentos, verificará se há erros e remontará o arquivo. Depois que o arquivo for transferido com sucesso, a camada host a host no host B confirmará o recebimento do arquivo no host A.
+
 Neste exemplo, a camada host a host é responsável por fornecer uma conexão confiável entre o host A e o host B, dividindo o arquivo em segmentos menores e remontando os segmentos no destino. Também é responsável por multiplexar e desmultiplexar os dados e fornecer comunicação de ponta a ponta entre os dois hosts.
-Por que o modelo TCP/IP não tem camada física
+
+#### **Por que o modelo TCP/IP não tem camada física**
+
 A camada física não é coberta pelo modelo TCP/IP porque a camada de enlace de dados é considerada o ponto em que a interface ocorre entre o estoque TCP/IP e o hardware de rede subjacente. Além disso, ele foi projetado para ser independente da mídia física subjacente. Isso permite que o TCP/IP seja flexível e adaptável a diferentes tipos de conexões físicas, como Ethernet, Wi-Fi, fibra óptica ou até mesmo tecnologias mais antigas, como modems dial-up. A camada física normalmente é tratada por componentes de hardware e padrões específicos do meio físico usado, como cabos Ethernet ou ondas de rádio para Wi-Fi.
-Outros protocolos comuns da Internet
+
+#### **Outros protocolos comuns da Internet**
+
 O modelo TCP/IP abrange muitos protocolos da Internet. A principal regra desses protocolos de Internet é como os dados são validados e enviados pela Internet. Alguns protocolos comuns da Internet incluem:
+
 •	HTTP (Hypertext Transfer Protocol): O HTTP cuida dos navegadores e sites da Web.
 •	FTP (File Transfer Protocol): O FTP cuida de como o arquivo deve ser enviado pela Internet.
 •	SMTP (Simple Mail Transfer Protocol): O SMTP é usado para enviar e receber dados.
-Diferença entre o modelo TCP/IP e OSI
-TCP/IP	OSI
-TCP se refere ao Protocolo de Controle de Transmissão.	OSI se refere à interconexão de sistemas abertos.
-O TCP/IP usa a camada de sessão e a camada de apresentação na própria camada do aplicativo.	O OSI usa diferentes camadas de sessão e apresentação.
-O TCP/IP segue uma abordagem horizontal sem conexão.	O OSI segue uma abordagem vertical.
-A camada de transporte em TCP/IP não fornece garantia de entrega de pacotes.	No modelo OSI, a camada de transporte fornece garantia de entrega de pacotes.
-Os protocolos não podem ser substituídos facilmente no modelo TCP/IP.	No modelo OSI, os protocolos são mais bem cobertos e são fáceis de substituir com a mudança tecnológica.
-A camada de rede do modelo TCP/IP fornece somente serviços sem conexão (IP). A camada de transporte (TCP) fornece conexões.	Os serviços sem conexão e orientados à conexão são fornecidos pela camada de rede no modelo OSI.
-Vantagens do modelo TCP/IP
+
+#### **Diferença entre o modelo TCP/IP e OSI**
+
+| TCP/IP | OSI
+| TCP se refere ao Protocolo de Controle de Transmissão. | OSI se refere à interconexão de sistemas abertos.
+| O TCP/IP usa a camada de sessão e a camada de apresentação na própria camada do aplicativo. | O OSI usa diferentes camadas de sessão e apresentação.
+| O TCP/IP segue uma abordagem horizontal sem conexão. | O OSI segue uma abordagem vertical.
+| A camada de transporte em TCP/IP não fornece garantia de entrega de pacotes. | No modelo OSI, a camada de transporte fornece garantia de entrega de pacotes.
+| Os protocolos não podem ser substituídos facilmente no modelo TCP/IP. | No modelo OSI, os protocolos são mais bem cobertos e são fáceis de substituir com a mudança tecnológica.
+| A camada de rede do modelo TCP/IP fornece somente serviços sem conexão (IP). | A camada de transporte (TCP) fornece conexões.	Os serviços sem conexão e orientados à conexão são fornecidos pela camada de rede no modelo OSI.
+
+#### 
+
+#### **Vantagens do modelo TCP/IP**
+
 •	Interoperabilidade: o modelo TCP/IP permite que diferentes tipos de computadores e redes se comuniquem entre si, promovendo compatibilidade e cooperação entre diversos sistemas.
 •	Escalabilidade: o TCP/IP é altamente escalável, o que o torna adequado para redes pequenas e grandes, desde redes locais (LANs) até redes de área ampla (WANs), como a Internet.
 •	Padronização: é baseado em padrões e protocolos abertos, garantindo que diferentes dispositivos e softwares possam trabalhar juntos sem problemas de compatibilidade.
 •	Flexibilidade: o modelo oferece suporte a vários protocolos de roteamento, tipos de dados e métodos de comunicação, tornando-o adaptável às diferentes necessidades de rede.
 •	Confiabilidade: O TCP/IP inclui recursos de verificação de erros e retransmissão que garantem a transferência confiável de dados, mesmo em longas distâncias e em várias condições de rede.
-Desvantagens do modelo TCP/IP
+
+#### **Desvantagens do modelo TCP/IP**
+
 •	Configuração complexa: configurar e gerenciar uma rede TCP/IP pode ser complexo, especialmente para redes grandes com muitos dispositivos. Essa complexidade pode levar a erros de configuração.
 •	Preocupações de segurança: O TCP/IP não foi originalmente projetado pensando na segurança. Embora agora existam muitos protocolos de segurança disponíveis (como SSL/TLS), eles foram adicionados ao modelo TCP/IP básico, o que pode levar a vulnerabilidades.
 •	Ineficiência para redes pequenas: para redes muito pequenas, a sobrecarga e a complexidade do modelo TCP/IP podem ser desnecessárias e ineficientes em comparação com protocolos de rede mais simples.
 •	Limitado pelo espaço de endereço: embora o IPv6 resolva esse problema, o sistema IPv4 mais antigo tem um espaço de endereço limitado, o que pode levar a problemas de esgotamento de endereços em redes maiores.
 •	Sobrecarga de dados: o TCP, o protocolo de transporte, inclui uma quantidade significativa de sobrecarga para garantir uma transmissão confiável. Isso pode reduzir a eficiência, especialmente para pacotes de dados pequenos ou em redes onde a velocidade é crucial.
-Modelo OSI (Interconexão de Sistemas Abertos)
-O modelo OSI (Open Systems Interconnection) é um conjunto de regras que explica como diferentes sistemas de computadores se comunicam em uma rede. O modelo OSI foi desenvolvido pela Organização Internacional de Padronização (ISO). O modelo OSI consiste em 7 camadas e cada camada tem funções e responsabilidades específicas. Essa abordagem em camadas facilita o trabalho conjunto de diferentes dispositivos e tecnologias. O modelo OSI fornece uma estrutura clara para transmissão de dados e gerenciamento de problemas de rede. O modelo OSI é amplamente usado como referência para entender como os sistemas de rede funcionam. Error! Filename not specified.
+
+
+## Modelo OSI (Interconexão de Sistemas Abertos)
+
+O modelo OSI (Open Systems Interconnection) é um conjunto de regras que explica como diferentes sistemas de computadores se comunicam em uma rede. O modelo OSI foi desenvolvido pela Organização Internacional de Padronização (ISO). O modelo OSI consiste em 7 camadas e cada camada tem funções e responsabilidades específicas. Essa abordagem em camadas facilita o trabalho conjunto de diferentes dispositivos e tecnologias. O modelo OSI fornece uma estrutura clara para transmissão de dados e gerenciamento de problemas de rede. O modelo OSI é amplamente usado como referência para entender como os sistemas de rede funcionam. 
+
 Modelo OSI
-Camadas do modelo OSI
+
+### Camadas do modelo OSI
+
 Há 7 camadas no modelo OSI e cada camada tem sua função específica no tratamento de dados. Todas as camadas são mencionadas abaixo:
+
 •	Camada física
 •	Camada de link de dados
 •	Camada de rede
@@ -2183,67 +2238,108 @@ Há 7 camadas no modelo OSI e cada camada tem sua função específica no tratam
 •	Camada de sessão
 •	Camada de apresentação
 •	Camada de aplicação
-Camada 1 — Camada física
+
+#### Camada 1 — Camada física
+
 A camada mais baixa do modelo de referência OSI é a camada física. Ele é responsável pela conexão física real entre os dispositivos. A camada física contém informações na forma de bits. A camada física é responsável por transmitir bits individuais de um nó para o outro. Ao receber dados, essa camada obterá o sinal recebido e o converterá em 0s e 1s e os enviará para a camada Data Link, que reunirá o quadro novamente. Os dispositivos comuns da camada física são hub, repetidor, modem e cabos.
+
 Funções da camada física
+
 •	Sincronização de bits: A camada física fornece a sincronização dos bits fornecendo um relógio. Esse relógio controla o remetente e o receptor, fornecendo sincronização no nível de bits.
 •	Controle de taxa de bits: A camada física também define a taxa de transmissão, ou seja, o número de bits enviados por segundo.
 •	Topologias físicas: a camada física especifica como os diferentes dispositivos/nós são organizados em uma rede, ou seja, topologia de barramento, topologia em estrela ou topologia de malha.
 •	Modo de transmissão: a camada física também define como os dados fluem entre os dois dispositivos conectados. Os vários modos de transmissão possíveis são Simplex, half-duplex e full-duplex.
-Camada 2 — Camada de enlace de dados (DLL)
+
+#### Camada 2 — Camada de enlace de dados (DLL)
+
 A camada de enlace de dados é responsável pela entrega da mensagem de nó a nó. A principal função dessa camada é garantir que a transferência de dados esteja livre de erros de um nó para outro, pela camada física. Quando um pacote chega em uma rede, é responsabilidade da DLL transmiti-lo ao Host usando seu endereço MAC. O pacote na camada de enlace de dados é chamado de Frame. Switches e pontes são dispositivos comuns de camada de enlace de dados.
+
 A camada de enlace de dados é dividida em duas subcamadas:
+
 •	Controle de link lógico (LLC)
 •	Controle de acesso à mídia (MAC)
+
 O pacote recebido da camada de rede é dividido ainda mais em quadros, dependendo do tamanho do quadro da NIC (placa de interface de rede). A DLL também encapsula o endereço MAC do remetente e do destinatário no cabeçalho.
+
 O endereço MAC do receptor é obtido colocando uma solicitação ARP (Protocolo de Resolução de Endereços) no fio perguntando “Quem tem esse endereço IP?” e o host de destino responderá com seu endereço MAC.
+
 Funções da camada de enlace de dados
+
 •	Enquadramento: O enquadramento é uma função da camada de enlace de dados. Ele fornece uma maneira de um remetente transmitir um conjunto de bits que são significativos para o receptor. Isso pode ser feito anexando padrões de bits especiais ao início e ao final do quadro.
 •	Endereçamento físico: Depois de criar quadros, a camada de enlace de dados adiciona endereços físicos (endereços MAC) do remetente e/ou destinatário no cabeçalho de cada quadro.
 •	Controle de erros: A camada de enlace de dados fornece o mecanismo de controle de erros no qual ela detecta e retransmite quadros danificados ou perdidos.
 •	Controle de fluxo: A taxa de dados deve ser constante em ambos os lados, caso contrário, os dados podem ser corrompidos, portanto, o controle de fluxo coordena a quantidade de dados que podem ser enviados antes de receber uma confirmação.
 •	Controle de acesso: Quando um único canal de comunicação é compartilhado por vários dispositivos, a subcamada MAC da camada de enlace de dados ajuda a determinar qual dispositivo tem controle sobre o canal em um determinado momento.
-Camada 3 — Camada de rede
+
+#### Camada 3 — Camada de rede
+
 A camada de rede funciona para a transmissão de dados de um host para outro localizado em redes diferentes. Ele também cuida do roteamento de pacotes, ou seja, da seleção do caminho mais curto para transmitir o pacote, a partir do número de rotas disponíveis. O endereço IP do remetente e do destinatário é colocado no cabeçalho pela camada de rede. O segmento na camada de rede é chamado de pacote. A camada de rede é implementada por dispositivos de rede, como roteadores e switches.
+
 Funções da camada de rede
+
 •	Roteamento: os protocolos da camada de rede determinam qual rota é adequada da origem ao destino. Essa função da camada de rede é conhecida como roteamento.
 •	Endereçamento lógico: Para identificar cada dispositivo entre redes de forma exclusiva, a camada de rede define um esquema de endereçamento. Os endereços IP do remetente e do destinatário são colocados no cabeçalho pela camada de rede. Esse endereço distingue cada dispositivo de forma única e universal.
-Camada 4 — Camada de transporte
+
+#### Camada 4 — Camada de transporte
+
 A camada de transporte fornece serviços para a camada de aplicação e recebe serviços da camada de rede. Os dados na camada de transporte são chamados de Segmentos. É responsável pela entrega de ponta a ponta da mensagem completa. A camada de transporte também fornece a confirmação da transmissão de dados bem-sucedida e retransmite os dados se um erro for encontrado. Os protocolos usados na camada de transporte são TCP, UDP NetBIOS, PPTP.
+
 No lado do remetente, a camada de transporte recebe os dados formatados das camadas superiores, realiza a segmentação e também implementa o controle de fluxo e erro para garantir a transmissão adequada dos dados. Ele também adiciona o número da porta de origem e destino em seu cabeçalho e encaminha os dados segmentados para a camada de rede.
+
 •	Geralmente, esse número de porta de destino é configurado, por padrão ou manualmente. Por exemplo, quando um aplicativo web solicita um servidor web, ele normalmente usa a porta número 80, porque essa é a porta padrão atribuída aos aplicativos web. Muitos aplicativos têm portas padrão atribuídas.
 No lado do receptor, a camada de transporte lê o número da porta de seu cabeçalho e encaminha os dados que recebeu para o respectivo aplicativo. Ele também realiza o sequenciamento e a remontagem dos dados segmentados.
+
 Funções da camada de transporte
+
 •	Segmentação e remontagem: Essa camada aceita a mensagem da camada (sessão) e divide a mensagem em unidades menores. Cada um dos segmentos produzidos tem um cabeçalho associado a ele. A camada de transporte na estação de destino remonta a mensagem.
 •	Endereçamento do ponto de serviço: Para entregar a mensagem ao processo correto, o cabeçalho da camada de transporte inclui um tipo de endereço chamado endereço do ponto de serviço ou endereço da porta. Assim, ao especificar esse endereço, a camada de transporte garante que a mensagem seja entregue ao processo correto.
+
 Serviços fornecidos pela Transport Layer
+
 •	Serviço orientado à conexão
 •	Serviço sem conexão
-Camada 5 — Camada de sessão
+
+#### Camada 5 — Camada de sessão
+
 A camada de sessão no modelo OSI é responsável pelo estabelecimento de conexões, gerenciamento de conexões e encerramento de sessões entre dois dispositivos. Ele também fornece autenticação e segurança. Os protocolos usados na camada de sessão são NetBIOS, PPTP.
+
 Funções da camada de sessão
+
 •	Estabelecimento, manutenção e encerramento da sessão: a camada permite que os dois processos estabeleçam, usem e encerrem uma conexão.
 •	Sincronização: Essa camada permite que um processo adicione pontos de verificação que são considerados pontos de sincronização nos dados. Esses pontos de sincronização ajudam a identificar o erro para que os dados sejam ressincronizados adequadamente, as extremidades das mensagens não sejam cortadas prematuramente e a perda de dados seja evitada.
 •	Controlador de diálogo: a camada de sessão permite que dois sistemas iniciem a comunicação entre si em half-duplex ou full-duplex.
+
 Exemplo
+
 Vamos considerar um cenário em que um usuário deseja enviar uma mensagem por meio de algum aplicativo do Messenger executado em seu navegador. O “Messenger” aqui atua como a camada de aplicação que fornece ao usuário uma interface para criar os dados. Essa mensagem ou os chamados dados são compactados, opcionalmente criptografados (se os dados forem confidenciais) e convertidos em bits (0 e 1) para que possam ser transmitidos.
-Camada 6 — Camada de apresentação
+#### Camada 6 — Camada de apresentação
+
 A camada de apresentação também é chamada de camada de tradução. Os dados da camada de aplicação são extraídos aqui e manipulados de acordo com o formato necessário para transmissão pela rede. Os protocolos usados na camada de apresentação são JPEG, MPEG, GIF, TLS/SSL, etc.
+
 Funções da camada de apresentação
+
 •	Tradução: Por exemplo, ASCII para EBCDIC.
 •	Criptografia/descriptografia: a criptografia de dados traduz os dados em outra forma ou código. Os dados criptografados são conhecidos como texto cifrado e os dados descriptografados são conhecidos como texto simples. Um valor de chave é usado para criptografar e descriptografar dados.
 •	Compressão: reduz o número de bits que precisam ser transmitidos na rede.
-Camada 7 — Camada de aplicação
+
+#### Camada 7 — Camada de aplicação
 No topo da pilha de camadas do Modelo de Referência OSI, encontramos a camada de aplicativo que é implementada pelos aplicativos de rede. Esses aplicativos produzem os dados a serem transferidos pela rede. Essa camada também serve como uma janela para os serviços do aplicativo acessarem a rede e exibirem as informações recebidas para o usuário. Os protocolos usados na camada de aplicação são SMTP, FTP, DNS, etc.
+
 Funções da camada de aplicação
+
 As principais funções da camada de aplicação são apresentadas abaixo.
+
 •	Terminal Virtual de Rede (NVT): permite que um usuário faça login em um host remoto.
 •	Acesso e gerenciamento de transferência de arquivos (FTAM): esse aplicativo permite que um usuário acesse arquivos em um host remoto, recupere arquivos em um host remoto e gerencie ou controle arquivos de um computador remoto.
 •	Serviços de correio: forneça serviço de e-mail.
 •	Serviços de diretório: esse aplicativo fornece fontes de banco de dados distribuídas e acesso a informações globais sobre vários objetos e serviços.
-Como os dados fluem no modelo OSI?
+
+### Como os dados fluem no modelo OSI?
+
 Quando transferimos informações de um dispositivo para outro, elas percorrem 7 camadas do modelo OSI. Primeiro, os dados descem por 7 camadas a partir da extremidade do remetente e depois voltam 7 camadas na extremidade do receptor.
+
 Os dados fluem pelo modelo OSI em um processo passo a passo:
+
 •	Camada de aplicativo: os aplicativos criam os dados.
 •	Camada de apresentação: os dados são formatados e criptografados.
 •	Camada de sessão: as conexões são estabelecidas e gerenciadas.
@@ -2252,9 +2348,13 @@ Os dados fluem pelo modelo OSI em um processo passo a passo:
 •	Camada de enlace de dados: os pacotes são emoldurados e enviados para o próximo dispositivo.
 •	Camada física: os quadros são convertidos em bits e transmitidos fisicamente.
 Cada camada adiciona informações específicas para garantir que os dados cheguem ao destino corretamente, e essas etapas são revertidas na chegada.
+
+<img src="OSI Model.png">
  
 Podemos entender como os dados fluem pelo modelo OSI com a ajuda de um exemplo mencionado abaixo.
+
 Suponhamos que a Pessoa A envie um e-mail para sua amiga Pessoa B.
+
 Passo 1: A pessoa A interage com aplicativos de e-mail como Gmail, Outlook, etc. Escreve seu e-mail para enviar. (Isso acontece na camada de aplicação).
 Etapa 2: Na camada de apresentação, o aplicativo Mail se prepara para a transmissão de dados, como criptografar dados e formatá-los para transmissão.
 Etapa 3: Na camada de sessão, há uma conexão estabelecida entre o remetente e o destinatário na Internet.
@@ -2263,7 +2363,9 @@ Etapa 5: Na camada de rede, o endereçamento de pacotes é feito para encontrar 
 Etapa 6: Na camada de link de dados, os pacotes de dados são encapsulados em quadros e, em seguida, o endereço MAC é adicionado aos dispositivos locais e, em seguida, verifica se há erros usando a detecção de erros.
 Etapa 7: Na camada física, os quadros são transmitidos na forma de sinais elétricos/ópticos por um meio de rede física, como cabo Ethernet ou WiFi.
 Depois que o e-mail chegar ao destinatário, ou seja, a Pessoa B, o processo será revertido e descriptografará o conteúdo do e-mail. Por fim, o e-mail será exibido no cliente de e-mail da Pessoa B.
+
 Protocolos usados nas camadas OSI
+
 Camada	Trabalhando	Unidade de dados de protocolo	Protocolos
 1 — Camada física	Estabelecendo conexões físicas entre dispositivos.	Pedaços	USB, SONET/SDH, etc.
 2 — Camada de enlace de dados	Entrega de mensagem de nó a nó.	Quadros	Ethernet, PPP, etc.
