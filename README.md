@@ -4,11 +4,11 @@
   </a>
 </p>
 
-## [ENGLISH VERSION](TCP/IP (Protocols and Networking Basics))
+## [ENGLISH VERSION](ingles)
 ## [VERSÃO PORTUGUÊS-BR](TCP/IP (princípios básicos de protocolos e redes))
 
 
-## TCP/IP (Protocols and Networking Basics)
+## [TCP/IP (Protocols and Networking Basics)](#ingles)
 
 The TCP/IP model is a fundamental framework for computer networking. It stands for Transmission Control Protocol/Internet Protocol, which are the core protocols of the Internet. This model defines how data is transmitted over networks, ensuring reliable communication between devices. It consists of four layers: the Link Layer, the Internet Layer, the Transport Layer, and the Application Layer. Each layer has specific functions that help manage different aspects of network communication, making it essential for understanding and working with modern networks.
 
