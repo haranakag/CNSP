@@ -5,7 +5,7 @@
 </p>
 
 ## [ENGLISH VERSION](#tcpip-protocols-and-networking-basics)
-## [VERSÃO PORTUGUÊS-BR](#tcpip-principios-basicos-de-protocolos-e-redes)
+## [VERSÃO PORTUGUÊS-BR](#tcpip-princípios-básicos-de-protocolos-e-redes)
 
 
 ## [TCP/IP (Protocols and Networking Basics)](#ingles)
