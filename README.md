@@ -323,6 +323,8 @@ As the modern Internet does not prefer the OSI Model, but still, the OSI Model i
 | Protocols at each layer is independent of the other layer. | Layers are integrated, some layers are required by other layers of TCP/IP model. |
 | OSI Model is a conceptual framework, less used in practical applications. | Widely used in actual networks like Internet and Communication Systems. |
 
+###
+
 ### Advantages of OSI Model
 
 The OSI Model defines the communication of a computing system into 7 different layers. Its advantages include:
@@ -708,7 +710,7 @@ The purpose of the test is to simulate how an attacker would go about gaining ac
 
 When you run a test on your network with the help cyber security professionals, it will typically follow these steps: 
 
-1. Planning  
+     1\. Planning  
 
 We’ll first discuss with you what methods will be used in the test and how the results will be measured. Both these aspects will vary depending on the scope and goals of the test. At this stage, an ethical hacker will also identify the critical areas of your network that could contain vulnerabilities.  
 
@@ -2094,9 +2096,11 @@ Securely storing passwords is critical for individual users and organizations al
 ------------------------------------------------------------------------------------------------------------------------------
 
 ## TCP/IP (princípios básicos de protocolos e redes)
-O modelo TCP/IP é uma framework fundamental para redes de computadores. Significa Transmission Control Protocol/Internet Protocol, que são os principais protocolos da Internet. Esse modelo define como os dados são transmitidos pelas redes, garantindo uma comunicação confiável entre dispositivos. Ela consiste em quatro camadas: a camada de link, a camada de Internet, a camada de transporte e a camada de aplicação. Cada camada tem funções específicas que ajudam a gerenciar diferentes aspectos da comunicação de rede, tornando-a essencial para entender e trabalhar com redes modernas.
+O modelo TCP/IP é um framework fundamental para redes de computadores. Significa Transmission Control Protocol/Internet Protocol, que são os principais protocolos da Internet. 
+Esse modelo define como os dados são transmitidos pelas redes, garantindo uma comunicação confiável entre dispositivos. Ela consiste em quatro camadas: a camada de link, a camada de Internet, a camada de transporte e a camada de aplicação. Cada camada tem funções específicas que ajudam a gerenciar diferentes aspectos da comunicação de rede, tornando-a essencial para entender e trabalhar com redes modernas.
 
-O TCP/IP foi projetado e desenvolvido pelo Departamento de Defesa (DoD) na década de 1960 e é baseado em protocolos padrão. O modelo TCP/IP é uma versão concisa do modelo OSI. Ele contém quatro camadas, ao contrário das sete camadas do modelo OSI. Neste artigo, discutiremos o modelo TCP/IP em detalhes.
+O TCP/IP foi projetado e desenvolvido pelo Departamento de Defesa (DoD) na década de 1960 e é baseado em protocolos padrão. 
+O modelo TCP/IP é uma versão concisa do modelo OSI. Ele contém quatro camadas, ao contrário das sete camadas do modelo OSI. Neste artigo, discutiremos o modelo TCP/IP em detalhes.
 
 O modelo TCP/IP foi desenvolvido junto com a criação da ARPANET, que mais tarde se tornou a base da Internet moderna. Ele foi projetado com foco nos aspectos práticos da rede na época. Os detalhes de hardware de nível inferior e o meio de transmissão física foram amplamente abstraídos em favor de protocolos de rede de nível superior.
 
@@ -2144,7 +2148,9 @@ O tipo de protocolo de rede do pacote, nesse caso, TCP/IP, é identificado pela 
 Essa camada é paralela às funções da camada de rede do OSI. Ele define os protocolos responsáveis pela transmissão lógica de dados em toda a rede. Os principais protocolos que residem nessa camada são os seguintes:
 
 •	IP: IP significa Internet Protocol e é responsável por entregar pacotes do host de origem para o host de destino, observando os endereços IP nos cabeçalhos dos pacotes. O IP tem duas versões: IPv4 e IPv6. O IPv4 é o que a maioria dos sites está usando atualmente. Mas o IPv6 está crescendo à medida que o número de endereços IPv4 é limitado em número quando comparado ao número de usuários.
+
 •	ICMP: ICMP significa Internet Control Message Protocol. Ele é encapsulado em datagramas IP e é responsável por fornecer aos hosts informações sobre problemas de rede.
+
 •	ARP: ARP significa Protocolo de Resolução de Endereços. Seu trabalho é encontrar o endereço de hardware de um host a partir de um endereço IP conhecido. O ARP tem vários tipos: ARP reverso, ARP proxy, ARP gratuito e ARP inverso.
 
 A camada da Internet é uma camada no pacote IP (Internet Protocol), que é o conjunto de protocolos que definem a Internet. A camada da Internet é responsável por rotear pacotes de dados de um dispositivo para outro em uma rede. Isso é feito atribuindo a cada dispositivo um endereço IP exclusivo, usado para identificar o dispositivo e determinar a rota que os pacotes devem seguir para alcançá-lo.
@@ -2158,6 +2164,7 @@ Neste exemplo, a camada da Internet desempenha um papel crucial na entrega do e-
 Os protocolos da camada de transporte TCP/IP trocam confirmações de recebimento de dados e retransmitem pacotes perdidos para garantir que os pacotes cheguem em ordem e sem erros. A comunicação de ponta a ponta é chamada assim. O Transmission Control Protocol (TCP) e o User Datagram Protocol são protocolos de camada de transporte nesse nível (UDP).
 
 •	TCP: os aplicativos podem interagir uns com os outros usando o TCP como se estivessem fisicamente conectados por um circuito. O TCP transmite dados de uma forma que se assemelha à transmissão caractere por caractere, em vez de pacotes separados. Um ponto de partida que estabelece a conexão, toda a transmissão em ordem de bytes e um ponto final que fecha a conexão compõem essa transmissão.
+
 •	UDP: O serviço de entrega de datagramas é fornecido pelo UDP, o outro protocolo da camada de transporte. As conexões entre os hosts de recebimento e envio não são verificadas pelo UDP. Os aplicativos que transportam pequenas quantidades de dados usam UDP em vez de TCP, pois isso elimina os processos de estabelecimento e validação de conexões.
 
 #### **4\. Camada de aplicação**
@@ -2165,15 +2172,20 @@ Os protocolos da camada de transporte TCP/IP trocam confirmações de recebiment
 Essa camada é análoga à camada de transporte do modelo OSI. É responsável pela comunicação de ponta a ponta e pela entrega de dados sem erros. Ele protege os aplicativos da camada superior das complexidades dos dados. Os três principais protocolos presentes nessa camada são:
 
 •	HTTP e HTTPS: HTTP significa protocolo de transferência de hipertexto. Ele é usado pela World Wide Web para gerenciar as comunicações entre navegadores e servidores da Web. HTTPS significa HTTP-secure. É uma combinação de HTTP com SSL (Secure Socket Layer). É eficiente nos casos em que o navegador precisa preencher formulários, fazer login, autenticar e realizar transações bancárias.
+
 •	SSH: SSH significa Secure Shell. É um software de emulações de terminal semelhante ao Telnet. O motivo pelo qual o SSH é preferido é por causa de sua capacidade de manter a conexão criptografada. Ele configura uma sessão segura por meio de uma conexão TCP/IP.
+
 •	NTP: NTP significa Network Time Protocol. Ele é usado para sincronizar os relógios do nosso computador com uma fonte de horário padrão. É muito útil em situações como transações bancárias. Suponha a seguinte situação sem a presença do NTP. Suponha que você realize uma transação em que seu computador lê a hora às 14h30, enquanto o servidor a registra às 14h28. O servidor pode falhar gravemente se estiver fora de sincronia.
 
 A camada host a host é uma camada no modelo OSI (Open Systems Interconnection) responsável por fornecer comunicação entre hosts (computadores ou outros dispositivos) em uma rede. Também é conhecida como camada de transporte.
 Alguns casos de uso comuns da camada de host para host incluem:
 
 •	Transferência confiável de dados: a camada de host para host garante que os dados sejam transferidos de forma confiável entre os hosts usando técnicas como correção de erros e controle de fluxo. Por exemplo, se um pacote de dados for perdido durante a transmissão, a camada de host para host pode solicitar que o pacote seja retransmitido para garantir que todos os dados sejam recebidos corretamente.
+
 •	Segmentação e remontagem: a camada de host para host é responsável por dividir grandes blocos de dados em segmentos menores que podem ser transmitidos pela rede e, em seguida, reagrupar os dados no destino. Isso permite que os dados sejam transmitidos com mais eficiência e ajuda a evitar a sobrecarga da rede.
+
 •	Multiplexação e demultiplexação: a camada host a host é responsável por multiplexar dados de várias fontes em uma única conexão de rede e, em seguida, demultiplexar os dados no destino. Isso permite que vários dispositivos compartilhem a mesma conexão de rede e ajuda a melhorar a utilização da rede.
+
 •	Comunicação de ponta a ponta: a camada de host a host fornece um serviço orientado à conexão que permite que os hosts se comuniquem entre si de ponta a ponta, sem a necessidade de dispositivos intermediários envolvidos na comunicação.
 
 **Exemplo:** considere uma rede com dois hosts, A e B. O host A deseja enviar um arquivo para o host B. A camada host-to-host no host A dividirá o arquivo em segmentos menores, adicionará informações de correção de erros e controle de fluxo e, em seguida, transmitirá os segmentos pela rede para o host B. A camada host-to-host no host B receberá os segmentos, verificará se há erros e remontará o arquivo. Depois que o arquivo for transferido com sucesso, a camada host a host no host B confirmará o recebimento do arquivo no host A.
@@ -2189,41 +2201,53 @@ A camada física não é coberta pelo modelo TCP/IP porque a camada de enlace de
 O modelo TCP/IP abrange muitos protocolos da Internet. A principal regra desses protocolos de Internet é como os dados são validados e enviados pela Internet. Alguns protocolos comuns da Internet incluem:
 
 •	HTTP (Hypertext Transfer Protocol): O HTTP cuida dos navegadores e sites da Web.
+
 •	FTP (File Transfer Protocol): O FTP cuida de como o arquivo deve ser enviado pela Internet.
+
 •	SMTP (Simple Mail Transfer Protocol): O SMTP é usado para enviar e receber dados.
 
 #### **Diferença entre o modelo TCP/IP e OSI**
 
-| TCP/IP | OSI
-| TCP se refere ao Protocolo de Controle de Transmissão. | OSI se refere à interconexão de sistemas abertos.
-| O TCP/IP usa a camada de sessão e a camada de apresentação na própria camada do aplicativo. | O OSI usa diferentes camadas de sessão e apresentação.
+| TCP/IP | OSI |
+| TCP se refere ao Protocolo de Controle de Transmissão. | OSI se refere à interconexão de sistemas abertos. |
+| O TCP/IP usa a camada de sessão e a camada de apresentação na própria camada do aplicativo. | O OSI usa diferentes camadas de sessão e apresentação. |
 | O TCP/IP segue uma abordagem horizontal sem conexão. | O OSI segue uma abordagem vertical.
-| A camada de transporte em TCP/IP não fornece garantia de entrega de pacotes. | No modelo OSI, a camada de transporte fornece garantia de entrega de pacotes.
-| Os protocolos não podem ser substituídos facilmente no modelo TCP/IP. | No modelo OSI, os protocolos são mais bem cobertos e são fáceis de substituir com a mudança tecnológica.
-| A camada de rede do modelo TCP/IP fornece somente serviços sem conexão (IP). | A camada de transporte (TCP) fornece conexões.	Os serviços sem conexão e orientados à conexão são fornecidos pela camada de rede no modelo OSI.
+| A camada de transporte em TCP/IP não fornece garantia de entrega de pacotes. | No modelo OSI, a camada de transporte fornece garantia de entrega de pacotes. |
+| Os protocolos não podem ser substituídos facilmente no modelo TCP/IP. | No modelo OSI, os protocolos são mais bem cobertos e são fáceis de substituir com a mudança tecnológica. |
+| A camada de rede do modelo TCP/IP fornece somente serviços sem conexão (IP). | A camada de transporte (TCP) fornece conexões.	Os serviços sem conexão e orientados à conexão são fornecidos pela camada de rede no modelo OSI. |
 
 #### 
 
 #### **Vantagens do modelo TCP/IP**
 
 •	Interoperabilidade: o modelo TCP/IP permite que diferentes tipos de computadores e redes se comuniquem entre si, promovendo compatibilidade e cooperação entre diversos sistemas.
+
 •	Escalabilidade: o TCP/IP é altamente escalável, o que o torna adequado para redes pequenas e grandes, desde redes locais (LANs) até redes de área ampla (WANs), como a Internet.
+
 •	Padronização: é baseado em padrões e protocolos abertos, garantindo que diferentes dispositivos e softwares possam trabalhar juntos sem problemas de compatibilidade.
+
 •	Flexibilidade: o modelo oferece suporte a vários protocolos de roteamento, tipos de dados e métodos de comunicação, tornando-o adaptável às diferentes necessidades de rede.
+
 •	Confiabilidade: O TCP/IP inclui recursos de verificação de erros e retransmissão que garantem a transferência confiável de dados, mesmo em longas distâncias e em várias condições de rede.
+
 
 #### **Desvantagens do modelo TCP/IP**
 
 •	Configuração complexa: configurar e gerenciar uma rede TCP/IP pode ser complexo, especialmente para redes grandes com muitos dispositivos. Essa complexidade pode levar a erros de configuração.
+
 •	Preocupações de segurança: O TCP/IP não foi originalmente projetado pensando na segurança. Embora agora existam muitos protocolos de segurança disponíveis (como SSL/TLS), eles foram adicionados ao modelo TCP/IP básico, o que pode levar a vulnerabilidades.
+
 •	Ineficiência para redes pequenas: para redes muito pequenas, a sobrecarga e a complexidade do modelo TCP/IP podem ser desnecessárias e ineficientes em comparação com protocolos de rede mais simples.
+
 •	Limitado pelo espaço de endereço: embora o IPv6 resolva esse problema, o sistema IPv4 mais antigo tem um espaço de endereço limitado, o que pode levar a problemas de esgotamento de endereços em redes maiores.
+
 •	Sobrecarga de dados: o TCP, o protocolo de transporte, inclui uma quantidade significativa de sobrecarga para garantir uma transmissão confiável. Isso pode reduzir a eficiência, especialmente para pacotes de dados pequenos ou em redes onde a velocidade é crucial.
 
 
 ## Modelo OSI (Interconexão de Sistemas Abertos)
 
-O modelo OSI (Open Systems Interconnection) é um conjunto de regras que explica como diferentes sistemas de computadores se comunicam em uma rede. O modelo OSI foi desenvolvido pela Organização Internacional de Padronização (ISO). O modelo OSI consiste em 7 camadas e cada camada tem funções e responsabilidades específicas. Essa abordagem em camadas facilita o trabalho conjunto de diferentes dispositivos e tecnologias. O modelo OSI fornece uma estrutura clara para transmissão de dados e gerenciamento de problemas de rede. O modelo OSI é amplamente usado como referência para entender como os sistemas de rede funcionam. 
+O modelo OSI (Open Systems Interconnection) é um conjunto de regras que explica como diferentes sistemas de computadores se comunicam em uma rede. 
+O modelo OSI foi desenvolvido pela Organização Internacional de Padronização (ISO). O modelo OSI consiste em 7 camadas e cada camada tem funções e responsabilidades específicas. Essa abordagem em camadas facilita o trabalho conjunto de diferentes dispositivos e tecnologias. O modelo OSI fornece uma estrutura clara para transmissão de dados e gerenciamento de problemas de rede. O modelo OSI é amplamente usado como referência para entender como os sistemas de rede funcionam. 
 
 Modelo OSI
 
@@ -2232,12 +2256,19 @@ Modelo OSI
 Há 7 camadas no modelo OSI e cada camada tem sua função específica no tratamento de dados. Todas as camadas são mencionadas abaixo:
 
 •	Camada física
+
 •	Camada de link de dados
+
 •	Camada de rede
+
 •	Camada de transporte
+
 •	Camada de sessão
+
 •	Camada de apresentação
+
 •	Camada de aplicação
+
 
 #### Camada 1 — Camada física
 
@@ -2246,9 +2277,13 @@ A camada mais baixa do modelo de referência OSI é a camada física. Ele é res
 Funções da camada física
 
 •	Sincronização de bits: A camada física fornece a sincronização dos bits fornecendo um relógio. Esse relógio controla o remetente e o receptor, fornecendo sincronização no nível de bits.
+
 •	Controle de taxa de bits: A camada física também define a taxa de transmissão, ou seja, o número de bits enviados por segundo.
+
 •	Topologias físicas: a camada física especifica como os diferentes dispositivos/nós são organizados em uma rede, ou seja, topologia de barramento, topologia em estrela ou topologia de malha.
+
 •	Modo de transmissão: a camada física também define como os dados fluem entre os dois dispositivos conectados. Os vários modos de transmissão possíveis são Simplex, half-duplex e full-duplex.
+
 
 #### Camada 2 — Camada de enlace de dados (DLL)
 
@@ -2257,7 +2292,9 @@ A camada de enlace de dados é responsável pela entrega da mensagem de nó a n�
 A camada de enlace de dados é dividida em duas subcamadas:
 
 •	Controle de link lógico (LLC)
+
 •	Controle de acesso à mídia (MAC)
+
 
 O pacote recebido da camada de rede é dividido ainda mais em quadros, dependendo do tamanho do quadro da NIC (placa de interface de rede). A DLL também encapsula o endereço MAC do remetente e do destinatário no cabeçalho.
 
@@ -2266,10 +2303,15 @@ O endereço MAC do receptor é obtido colocando uma solicitação ARP (Protocolo
 Funções da camada de enlace de dados
 
 •	Enquadramento: O enquadramento é uma função da camada de enlace de dados. Ele fornece uma maneira de um remetente transmitir um conjunto de bits que são significativos para o receptor. Isso pode ser feito anexando padrões de bits especiais ao início e ao final do quadro.
+
 •	Endereçamento físico: Depois de criar quadros, a camada de enlace de dados adiciona endereços físicos (endereços MAC) do remetente e/ou destinatário no cabeçalho de cada quadro.
+
 •	Controle de erros: A camada de enlace de dados fornece o mecanismo de controle de erros no qual ela detecta e retransmite quadros danificados ou perdidos.
+
 •	Controle de fluxo: A taxa de dados deve ser constante em ambos os lados, caso contrário, os dados podem ser corrompidos, portanto, o controle de fluxo coordena a quantidade de dados que podem ser enviados antes de receber uma confirmação.
+
 •	Controle de acesso: Quando um único canal de comunicação é compartilhado por vários dispositivos, a subcamada MAC da camada de enlace de dados ajuda a determinar qual dispositivo tem controle sobre o canal em um determinado momento.
+
 
 #### Camada 3 — Camada de rede
 
@@ -2278,7 +2320,9 @@ A camada de rede funciona para a transmissão de dados de um host para outro loc
 Funções da camada de rede
 
 •	Roteamento: os protocolos da camada de rede determinam qual rota é adequada da origem ao destino. Essa função da camada de rede é conhecida como roteamento.
+
 •	Endereçamento lógico: Para identificar cada dispositivo entre redes de forma exclusiva, a camada de rede define um esquema de endereçamento. Os endereços IP do remetente e do destinatário são colocados no cabeçalho pela camada de rede. Esse endereço distingue cada dispositivo de forma única e universal.
+
 
 #### Camada 4 — Camada de transporte
 
@@ -2287,16 +2331,19 @@ A camada de transporte fornece serviços para a camada de aplicação e recebe s
 No lado do remetente, a camada de transporte recebe os dados formatados das camadas superiores, realiza a segmentação e também implementa o controle de fluxo e erro para garantir a transmissão adequada dos dados. Ele também adiciona o número da porta de origem e destino em seu cabeçalho e encaminha os dados segmentados para a camada de rede.
 
 •	Geralmente, esse número de porta de destino é configurado, por padrão ou manualmente. Por exemplo, quando um aplicativo web solicita um servidor web, ele normalmente usa a porta número 80, porque essa é a porta padrão atribuída aos aplicativos web. Muitos aplicativos têm portas padrão atribuídas.
+
 No lado do receptor, a camada de transporte lê o número da porta de seu cabeçalho e encaminha os dados que recebeu para o respectivo aplicativo. Ele também realiza o sequenciamento e a remontagem dos dados segmentados.
 
 Funções da camada de transporte
 
 •	Segmentação e remontagem: Essa camada aceita a mensagem da camada (sessão) e divide a mensagem em unidades menores. Cada um dos segmentos produzidos tem um cabeçalho associado a ele. A camada de transporte na estação de destino remonta a mensagem.
+
 •	Endereçamento do ponto de serviço: Para entregar a mensagem ao processo correto, o cabeçalho da camada de transporte inclui um tipo de endereço chamado endereço do ponto de serviço ou endereço da porta. Assim, ao especificar esse endereço, a camada de transporte garante que a mensagem seja entregue ao processo correto.
 
 Serviços fornecidos pela Transport Layer
 
 •	Serviço orientado à conexão
+
 •	Serviço sem conexão
 
 #### Camada 5 — Camada de sessão
@@ -2306,12 +2353,16 @@ A camada de sessão no modelo OSI é responsável pelo estabelecimento de conex�
 Funções da camada de sessão
 
 •	Estabelecimento, manutenção e encerramento da sessão: a camada permite que os dois processos estabeleçam, usem e encerrem uma conexão.
+
 •	Sincronização: Essa camada permite que um processo adicione pontos de verificação que são considerados pontos de sincronização nos dados. Esses pontos de sincronização ajudam a identificar o erro para que os dados sejam ressincronizados adequadamente, as extremidades das mensagens não sejam cortadas prematuramente e a perda de dados seja evitada.
+
 •	Controlador de diálogo: a camada de sessão permite que dois sistemas iniciem a comunicação entre si em half-duplex ou full-duplex.
+
 
 Exemplo
 
 Vamos considerar um cenário em que um usuário deseja enviar uma mensagem por meio de algum aplicativo do Messenger executado em seu navegador. O “Messenger” aqui atua como a camada de aplicação que fornece ao usuário uma interface para criar os dados. Essa mensagem ou os chamados dados são compactados, opcionalmente criptografados (se os dados forem confidenciais) e convertidos em bits (0 e 1) para que possam ser transmitidos.
+
 #### Camada 6 — Camada de apresentação
 
 A camada de apresentação também é chamada de camada de tradução. Os dados da camada de aplicação são extraídos aqui e manipulados de acordo com o formato necessário para transmissão pela rede. Os protocolos usados na camada de apresentação são JPEG, MPEG, GIF, TLS/SSL, etc.
@@ -2319,7 +2370,9 @@ A camada de apresentação também é chamada de camada de tradução. Os dados 
 Funções da camada de apresentação
 
 •	Tradução: Por exemplo, ASCII para EBCDIC.
+
 •	Criptografia/descriptografia: a criptografia de dados traduz os dados em outra forma ou código. Os dados criptografados são conhecidos como texto cifrado e os dados descriptografados são conhecidos como texto simples. Um valor de chave é usado para criptografar e descriptografar dados.
+
 •	Compressão: reduz o número de bits que precisam ser transmitidos na rede.
 
 #### Camada 7 — Camada de aplicação
@@ -2341,12 +2394,19 @@ Quando transferimos informações de um dispositivo para outro, elas percorrem 7
 Os dados fluem pelo modelo OSI em um processo passo a passo:
 
 •	Camada de aplicativo: os aplicativos criam os dados.
+
 •	Camada de apresentação: os dados são formatados e criptografados.
+
 •	Camada de sessão: as conexões são estabelecidas e gerenciadas.
+
 •	Camada de transporte: os dados são divididos em segmentos para uma entrega confiável.
+
 •	Camada de rede: os segmentos são empacotados em pacotes e roteados.
+
 •	Camada de enlace de dados: os pacotes são emoldurados e enviados para o próximo dispositivo.
+
 •	Camada física: os quadros são convertidos em bits e transmitidos fisicamente.
+
 Cada camada adiciona informações específicas para garantir que os dados cheguem ao destino corretamente, e essas etapas são revertidas na chegada.
 
 <img src="OSI Model.png">
@@ -2355,20 +2415,29 @@ Podemos entender como os dados fluem pelo modelo OSI com a ajuda de um exemplo m
 
 Suponhamos que a Pessoa A envie um e-mail para sua amiga Pessoa B.
 
-Passo 1: A pessoa A interage com aplicativos de e-mail como Gmail, Outlook, etc. Escreve seu e-mail para enviar. (Isso acontece na camada de aplicação).
+Etapa 1: A pessoa A interage com aplicativos de e-mail como Gmail, Outlook, etc. Escreve seu e-mail para enviar. (Isso acontece na camada de aplicação).
+
 Etapa 2: Na camada de apresentação, o aplicativo Mail se prepara para a transmissão de dados, como criptografar dados e formatá-los para transmissão.
+
 Etapa 3: Na camada de sessão, há uma conexão estabelecida entre o remetente e o destinatário na Internet.
+
 Etapa 4: Na camada de transporte, os dados de e-mail são divididos em segmentos menores. Ele adiciona o número de sequência e as informações de verificação de erros para manter a confiabilidade das informações.
+
 Etapa 5: Na camada de rede, o endereçamento de pacotes é feito para encontrar a melhor rota para transferência.
+
 Etapa 6: Na camada de link de dados, os pacotes de dados são encapsulados em quadros e, em seguida, o endereço MAC é adicionado aos dispositivos locais e, em seguida, verifica se há erros usando a detecção de erros.
+
 Etapa 7: Na camada física, os quadros são transmitidos na forma de sinais elétricos/ópticos por um meio de rede física, como cabo Ethernet ou WiFi.
+
 Depois que o e-mail chegar ao destinatário, ou seja, a Pessoa B, o processo será revertido e descriptografará o conteúdo do e-mail. Por fim, o e-mail será exibido no cliente de e-mail da Pessoa B.
 
 Protocolos usados nas camadas OSI
 
 Camada	Trabalhando	Unidade de dados de protocolo	Protocolos
 1 — Camada física	Estabelecendo conexões físicas entre dispositivos.	Pedaços	USB, SONET/SDH, etc.
+
 2 — Camada de enlace de dados	Entrega de mensagem de nó a nó.	Quadros	Ethernet, PPP, etc.
+
 3 — Camada de rede	Transmissão de dados de um host para outro, localizados em redes diferentes.	Pacotes	IP, ICMP, IGMP, OSPF, etc.
 
 4 — Camada de transporte	Pegue o serviço da camada de rede e forneça-o à camada de aplicativo.	Segmentos (para TCP) ou datagramas (para UDP)	TCP, UDP, SCTP, etc.
@@ -2376,12 +2445,16 @@ Camada	Trabalhando	Unidade de dados de protocolo	Protocolos
 5 — Camada de sessão	Estabelece conexão, manutenção, garante a autenticação e garante a segurança.	Dados	NetBIOS, RPC, PPTP, etc.
 
 6 — Camada de apresentação	Os dados da camada de aplicação são extraídos e manipulados no formato necessário para transmissão.	Dados	TLS/SSL, MIME, JPEG, PNG, ASCII, etc.
+
 7 — Camada de aplicação	Ajuda na identificação do cliente e na sincronização da comunicação.	Dados	FTP, SMTP, DNS, DHCP, etc.
 
 Por que o modelo OSI é importante?
+
 O modelo OSI é importante porque fornece ao usuário uma estrutura clara de “como os dados se movem na rede?”. Como o modelo OSI consiste em 7 camadas, cada camada tem sua função específica e, por isso, ajuda a entender, identificar e resolver facilmente os problemas complexos da rede, concentrando-se em uma das camadas e não na rede inteira.
 Como a Internet moderna não prefere o modelo OSI, ainda assim, o modelo OSI ainda é muito útil para resolver problemas de rede. Isso ajuda as pessoas a entenderem os conceitos de rede com muita facilidade.
-Diferença entre o modelo OSI e TCP/IP
+
+### Diferença entre o modelo OSI e TCP/IP
+
 Modelo OSI	Modelo TCP/IP
 OSI significa Interconexão de sistemas abertos.	TCP/IP significa Transmission Control Protocol/Internet Protocol.
 O modelo OSI tem 7 camadas.	O modelo TCP/IP consiste em 4 camadas.
@@ -2389,62 +2462,116 @@ A entrega do pacote é garantida no modelo OSI.	A entrega do pacote não é gara
 No modelo OSI, somente as camadas 1,2 e 3 são necessárias para transmissão de dados.	Todas as camadas do modelo TCP/IP são necessárias para a transmissão de dados.
 Os protocolos em cada camada são independentes da outra camada.	As camadas são integradas, algumas camadas são exigidas por outras camadas do modelo TCP/IP.
 O modelo OSI é uma estrutura conceitual, menos usada em aplicações práticas.	Amplamente utilizado em redes reais, como Internet e sistemas de comunicação.
-Vantagens do modelo OSI
+
+### Vantagens do modelo OSI
+
 O modelo OSI define a comunicação de um sistema de computação em 7 camadas diferentes. Suas vantagens incluem:
+
 •	Ele divide a comunicação de rede em 7 camadas, o que facilita a compreensão e a solução de problemas.
+
 •	Ele padroniza as comunicações de rede, pois cada camada tem funções e protocolos fixos.
+
 •	Diagnosticar problemas de rede é mais fácil com o modelo OSI.
+
 •	É mais fácil melhorar com os avanços, pois cada camada pode receber atualizações separadamente.
-Desvantagens do modelo OSI
+
+### Desvantagens do modelo OSI
+
 •	O modelo OSI tem sete camadas, o que pode ser complicado e difícil de entender para iniciantes.
+
 •	Nas redes da vida real, a maioria dos sistemas usa um modelo mais simples chamado pacote de protocolos da Internet (TCP/IP), portanto, o modelo OSI nem sempre é diretamente aplicável.
+
 •	Cada camada no modelo OSI adiciona seu próprio conjunto de regras e operações, o que pode tornar o processo mais demorado e menos eficiente.
+
 •	O modelo OSI é mais uma estrutura teórica, o que significa que é ótimo para entender conceitos, mas nem sempre é prático para implementação.
-Protocolos de descoberta de rede
-O que é IPv4?
+
+### Protocolos de descoberta de rede
+
+*O que é IPv4?*
+
 IPv4, ou Internet Protocol versão 4, é o sistema de endereçamento original da Internet, introduzido em 1983. Ele usa um esquema de endereços de 32 bits, que teoricamente permite mais de 4 bilhões de endereços exclusivos (2^32). Os endereços IPv4 geralmente são exibidos em formato decimal, divididos em quatro octetos separados por pontos. Por exemplo, 192.168.1.1 é um endereço IPv4 comum que você pode encontrar em uma rede doméstica.
-Formato de endereço IPv4
+
+#### Formato de endereço IPv4
+
 O formato de endereço IPv4 é um endereço de 32 bits que compreende dígitos binários separados por um ponto (.).
+
 Características do IPv4
+
 •	Comprimento de endereço de 32 bits: permite aproximadamente 4,3 bilhões de endereços exclusivos.
+
 •	Notação de ponto decimal: os endereços IP são escritos em um formato de quatro números decimais separados por pontos, como 192.168.1.1.
+
 •	Estrutura do pacote: inclui um cabeçalho e uma carga útil; o cabeçalho contém informações essenciais para roteamento e entrega.
+
 •	Campos de soma de verificação: usa somas de verificação no cabeçalho para verificar erros na integridade do cabeçalho.
+
 •	Fragmentação: permite que os pacotes sejam fragmentados nos roteadores ao longo da rota se o tamanho do pacote exceder a unidade máxima de transmissão (MTU).
+
 •	Protocolo de resolução de endereços (ARP): usado para mapear endereços de rede IP para os endereços de hardware usados por um protocolo de link de dados.
+
 •	Configuração manual e DHCP: suporta configuração manual de endereços IP e configuração dinâmica por meio de DHCP (Dynamic Host Configuration Protocol).
+
 •	Espaço de endereço limitado: a principal limitação que levou ao desenvolvimento do IPv6 para atender a mais dispositivos.
+
 •	Tradução de endereços de rede (NAT): usada para permitir que vários dispositivos em uma rede privada compartilhem um único endereço IP público.
+
 •	Segurança: carece de recursos de segurança inerentes, exigindo protocolos adicionais, como IPsec, para comunicações seguras.
-Desvantagens do IPv4
+
+#### Desvantagens do IPv4
+
 •	Espaço de endereço limitado: o IPv4 tem um número limitado de endereços, o que não é suficiente para o crescente número de dispositivos conectados à Internet.
+
 •	Configuração complexa: o IPv4 geralmente requer configuração manual ou DHCP para atribuir endereços, o que pode ser demorado e propenso a erros.
+
 •	Roteamento menos eficiente: o cabeçalho IPv4 é mais complexo, o que pode retardar o processamento e o roteamento de dados.
+
 •	Problemas de segurança: o IPv4 não tem recursos de segurança integrados, o que o torna mais vulnerável a ataques, a menos que medidas extras de segurança sejam adicionadas.
+
 •	Suporte limitado para qualidade de serviço (QoS): o IPv4 tem recursos limitados para priorizar certos tipos de dados, o que pode afetar o desempenho de aplicativos em tempo real, como streaming de vídeo e VoIP.
+
 •	Fragmentação: o IPv4 permite que os roteadores fragmentem pacotes, o que pode levar a ineficiências e aumentar as chances de perda ou corrupção de dados.
+
 •	Sobrecarga de transmissão: o IPv4 usa a transmissão para se comunicar com vários dispositivos em uma rede, o que pode criar tráfego de rede desnecessário e reduzir o desempenho.
  
-O que é IPv6?
+#### O que é IPv6?
+
 Outra versão mais comum do Internet Protocol atualmente é o IPv6. O conhecido protocolo IPv6 está sendo usado e implantado com mais frequência, especialmente nos mercados de telefonia móvel. O IPv6 foi projetado pela Internet Engineering Task Force (IETF) em dezembro de 1998 com o objetivo de substituir o IPv4 devido ao crescimento exponencial da Internet global de usuários.
 IPv6 significa Internet Protocol versão 6. O IPv6 é a nova versão do Internet Protocol, que é muito melhor do que o IPv4 em termos de complexidade e eficiência. O IPv6 é escrito como um grupo de 8 números hexadecimais separados por dois pontos (:). Ele pode ser escrito como 128 bits de 0s e 1s.
-Formato de endereço IPv6
+
+
+#### Formato de endereço IPv6
+
 O formato de endereço IPv6 é um endereço IP de 128 bits, escrito em um grupo de 8 números hexadecimais separados por dois pontos (:).
+
 Para mudar do IPv4 para o IPv6, existem várias estratégias:
+
 •	Empilhamento duplo: os dispositivos podem usar IPv4 e IPv6 ao mesmo tempo. Dessa forma, eles podem se comunicar com redes e dispositivos usando qualquer uma das versões.
+
 •	Tunelamento: esse método permite que usuários IPv6 enviem dados por meio de uma rede IPv4 para alcançar outros usuários IPv6. Pense nisso como criar um “túnel” para o tráfego IPv6 por meio do sistema IPv4 mais antigo.
+
 •	Tradução de endereços de rede (NAT): a NAT ajuda dispositivos que usam diferentes versões de endereços IP (IPv4 e IPv6) a se comunicarem entre si, traduzindo os endereços para que eles se entendam.
-Características do IPv6
+
+#### Características do IPv6
+
 O IPv6 usa endereços de 128 bits, oferecendo um espaço de endereço muito maior do que o sistema de 32 bits do IPv4.
+
 Os endereços IPv6 usam uma combinação de números e letras separados por dois pontos, permitindo endereços mais exclusivos.
+
 O cabeçalho IPv6 tem menos campos, tornando mais eficiente o processamento dos roteadores.
+
 O IPv6 oferece suporte a Unicast, Multicast e Anycast, mas não a Broadcast, reduzindo o tráfego na rede.
+
 O IPv6 permite que a sub-rede flexível (VLSM) divida redes com base em necessidades específicas.
 O IPv6 usa o Neighbor Discovery para resolução de endereços MAC em vez do ARP.
+
 O IPv6 usa protocolos de roteamento avançados, como OSPFv3 e RIPng, para melhor tratamento de endereços.
+
 Os dispositivos IPv6 podem autoatribuir endereços IP usando o SLAAC ou usar o DHCPv6 para obter mais controle.
+
 O IPv6 lida com a fragmentação no lado do remetente, não pelos roteadores, melhorando a velocidade.
-Diferença entre IPv4 e IPv6
+
+#### Diferença entre IPv4 e IPv6
+
 IPv4	IPv6
 O IPv4 tem um comprimento de endereço de 32 bits	O IPv6 tem um comprimento de endereço de 128 bits
 Ele suporta configuração manual e de endereços DHCP
@@ -2465,33 +2592,62 @@ Os endereços IP do IPv4 são divididos em cinco classes diferentes. Classe A, C
 O IPv4 suporta VLSM (máscara de sub-rede de comprimento variável).
 O IPv6 não oferece suporte ao VLSM.
 Exemplo de IPv4:66.94.29.13	Exemplo de IPv6:2001:0000:3238:DFE 1:0063:0000:0000:FEFB
-Benefícios do IPv6 em relação ao IPv4
+
+
+#### Benefícios do IPv6 em relação ao IPv4
+
 A versão recente do IP IPv6 tem uma vantagem maior sobre o IPv4. Aqui estão alguns dos benefícios mencionados:
+
 •	Espaço de endereço maior: o IPv6 tem um espaço de endereço maior do que o IPv4, o que é necessário para expandir os dispositivos conectados por IP. Em vez disso, o IPv6 tem um endereço IP de 128 bits e o IPv4 tem um endereço de 32 bits.
+
 •	Segurança aprimorada: O IPv6 tem alguma segurança aprimorada que é incorporada a ele. O IPv6 oferece segurança como autenticação de dados, criptografia de dados, etc. Aqui, uma conexão com a Internet é mais segura.
+
 •	Formato de cabeçalho simplificado: Em comparação com o IPv4, o IPv6 tem uma estrutura de cabeçalho mais simples e eficaz, que é mais econômica e também aumenta a velocidade da conexão com a Internet.
+
 •	Priorize: o IPv6 contém suporte mais forte e confiável para recursos de QoS, o que ajuda a aumentar o tráfego nos sites e aumenta a qualidade de áudio e vídeo nas páginas.
+
 •	Suporte aprimorado para dispositivos móveis: o IPv6 aumentou e melhorou o suporte para dispositivos móveis. Ele ajuda a fazer conexões rápidas em outros dispositivos móveis e de forma mais segura que o IPv4.
-Por que o IPv4 ainda está em uso?
+
+#### Por que o IPv4 ainda está em uso?
+
 •	Compatibilidade de infraestrutura Muitos sistemas e dispositivos são desenvolvidos para IPv4 e exigem atualizações significativas para oferecer suporte ao IPv6, incluindo roteadores, switches e computadores.
+
 •	Custo da transição — Mudar para IPv6 pode ser caro e complexo, envolvendo atualizações de hardware, atualizações de software e treinamento de pessoal.
+
 •	Falta de necessidade imediata — Técnicas como NAT (Network Address Translation) ajudam a prolongar a vida útil do IPv4, permitindo que vários dispositivos compartilhem um único endereço IP público, reduzindo a urgência de mudar para o IPv6.
+
 •	Estratégias de coexistência — As tecnologias que permitem que o IPv4 e o IPv6 sejam executados simultaneamente facilitam que as organizações adotem o IPv6 gradualmente enquanto mantêm seus sistemas IPv4 existentes.
+
 •	Adoção global lenta — A adoção do IPv6 varia significativamente em todo o mundo, o que exige o suporte contínuo do IPv4 para conectividade global.
+
 •	Falta de benefícios visíveis — Muitos usuários e organizações não veem melhorias imediatas com o IPv6 se não enfrentarem uma escassez de endereços IP, o que reduz o incentivo à atualização.
-Roteador, switch e hub
+
+### Roteador, switch e hub
+
 Na rede de computadores, é muito importante entender a diferença entre dispositivos como hubs, switches e roteadores. Esses dispositivos desempenham um papel importante na forma como os dados são transferidos pelas redes, afetando tudo, desde a velocidade e a eficiência até a segurança. Neste artigo, veremos as diferenças básicas entre esses dispositivos, como eles funcionam no modelo OSI e onde seus casos de uso são aplicáveis.
  
-O que é o Hub?
+#### O que é o Hub?
+
 Um hub é apenas um conector que conecta os fios vindos de lados diferentes. Não há processamento ou regeneração de sinal. É um dispositivo eletrônico que opera somente nas camadas físicas do modelo OSI.
+
 Também é conhecido como repetidor, pois transmite sinal para todas as portas, exceto a porta de onde o sinal é recebido. Além disso, os hubs não são tão inteligentes na comunicação e no processamento de informações para a 2ª e 3ª camadas.
-O que é o Switch?
+
+#### O que é o Switch?
+
 O switch é um dispositivo de comunicação ponto a ponto. Ele opera na camada de enlace de dados do modelo OSI. Ele usa a tabela de comutação para descobrir o destino correto.
+
 Basicamente, é um tipo de ponte que fornece melhores conexões. É um tipo de dispositivo que configura e interrompe as conexões de acordo com os requisitos necessários naquele momento. Ele vem com muitos recursos, como inundação, filtragem e transmissão de quadros.
-O que é roteador?
+
+
+#### O que é roteador?
+
 Os roteadores são dispositivos multiportas e mais sofisticados em comparação com repetidores e pontes. Ele contém uma tabela de roteamento que permite tomar decisões sobre a rota, ou seja, determinar qual dos vários caminhos possíveis entre a origem e o destino é o melhor para uma transmissão específica.
+
 Ele funciona na camada de rede 3 e é usado em LANs, MANs e WANs. Ele armazena o endereço IP e mantém o endereço por conta própria.
-Diferença entre hub, switch e roteador
+
+
+#### Diferença entre hub, switch e roteador
+
 Hub	Interruptor	Roteador
 O hub é um dispositivo de camada física, ou seja, camada 1.	O switch é um dispositivo de camada de enlace de dados, ou seja, camada 2.	O roteador é um dispositivo de camada de rede, ou seja, camada 3.
 Um hub funciona com base na transmissão.	O switch funciona com base no endereço MAC.	Um roteador funciona com base no endereço IP.
@@ -2501,97 +2657,172 @@ O hub não é um dispositivo inteligente que pode incluir amplificador no repeti
 O hub é mais barato em comparação com o switch e o roteador.	O switch é um dispositivo mais caro do que o hub.	O roteador é um dispositivo relativamente muito mais caro que o hub e o switch.
 A velocidade do hub original de 10 Mbps e do hub de internet moderno é de 100 Mbps.	a velocidade máxima é de 10 Mbps a 100 Mbps.	a velocidade máxima para conexões sem fio é de 1 a 10 Mbps e a velocidade máxima para conexões com fio é de 100 Mbps.
 Os hubs são usados em LANs.	O switch é usado em LANs.	Os roteadores são usados em LANs, MANs e WANs.
-Arquiteturas de rede, mapeamento e identificação de alvos
-Arquiteturas de rede
+
+
+### Arquiteturas de rede, mapeamento e identificação de alvos
+
+#### Arquiteturas de rede
+
 Arquiteturas comuns:
+
 •	Hub-and-spoke: um hub central (geralmente um roteador) se conecta a vários dispositivos spoke (clientes ou outras redes menores). Simples, mas pode se tornar um único ponto de falha.
+
 •	Malha: cada dispositivo está conectado a todos os outros dispositivos. Altamente redundante, mas complexo de gerenciar.
+
 •	Star: semelhante ao Hub-and-spoke, mas com um dispositivo de controle mais centralizado.
+
 •	Barramento: todos os dispositivos estão conectados a uma única linha de comunicação compartilhada.
+
 •	Anel: os dispositivos são conectados em um circuito fechado.
+
 •	Arquiteturas de nuvem: entenda os modelos de nuvem (IaaS, PaaS, SaaS) e suas implicações de segurança.
+
 •	Virtualização: como as tecnologias de virtualização (por exemplo, VMware, VirtualBox) afetam a arquitetura e a segurança da rede.
-Mapeamento e descoberta de rede
+
+
+#### Mapeamento e descoberta de rede
+
 O mapeamento de rede é o processo de identificar e documentar todos os dispositivos e suas conexões em uma rede. Isso inclui:
+
 •	Descobrindo dispositivos: identificar todos os dispositivos ativos na rede, como computadores, servidores, impressoras e dispositivos de rede (roteadores, switches).
+
 •	Mapeamento de conexões: determinar como esses dispositivos estão interconectados, incluindo conexões físicas e lógicas.
+
 •	Identificação de serviços: determinar os serviços em execução em cada dispositivo (por exemplo, servidores web, bancos de dados, servidores de e-mail).
+
 •	Coleta de informações: coleta de informações sobre os sistemas operacionais, versões de software e configurações de segurança de cada dispositivo.
-Técnicas de descoberta de rede:
+
+
+#### Técnicas de descoberta de rede:
+
 •	Passivo:
 o	Monitoramento do tráfego de rede: análise do tráfego de rede para identificar dispositivos e seus padrões de comunicação. Ferramentas como o Wireshark podem ser usadas para isso.
 o	Analisando arquivos de log: Examinando os registros do sistema e da rede em busca de informações sobre dispositivos na rede.
+
 •	Ativo:
 o	Varreduras de ping: envio de solicitações de eco ICMP (ping) para uma variedade de endereços IP para determinar quais hosts estão acessíveis.
 o	Escaneamento de portas: digitalização de portas em dispositivos de destino para identificar serviços abertos. O Nmap é uma ferramenta poderosa para isso.
 o	Impressão digital do serviço: identificar a versão e o tipo de serviço em execução em uma porta específica.
-Ferramentas para mapeamento e descoberta de rede
+
+#### Ferramentas para mapeamento e descoberta de rede
+
 •	Nmap (Network Mapper): uma ferramenta versátil de código aberto para descoberta de rede, escaneamento de portas e detecção de versões de serviços.
+
 •	Wireshark: Um poderoso analisador de protocolos de rede para capturar e analisar o tráfego da rede.
+
 •	Zenmap: A interface gráfica do usuário para o Nmap, fornecendo uma interface mais amigável.
+
 •	Nessus: um scanner comercial de vulnerabilidades que também inclui recursos de descoberta de rede.
+
 •	OpenVAS: um scanner de avaliação de vulnerabilidades de código aberto com recursos de descoberta de rede.
-Importância do mapeamento e descoberta de rede
+
+
+#### Importância do mapeamento e descoberta de rede
+
 •	Avaliações de segurança: identificação de vulnerabilidades e possíveis vetores de ataque.
+
 •	Planejamento e projeto de rede: Entendendo a topologia de rede atual para tomar decisões informadas sobre atualizações e expansões de rede.
+
 •	Solução de problemas de rede: isolamento e diagnóstico de problemas de rede.
+
 •	Conformidade: atender aos requisitos regulatórios e de conformidade que exigem inventários de rede.
+
 Considerações éticas:
+
 •	Obtenha a autorização adequada: sempre obtenha a autorização adequada antes de realizar varreduras de rede em qualquer rede que você não possua ou tenha permissão explícita para escanear.
+
 •	Minimize as interrupções: evite escaneamentos excessivos que possam afetar o desempenho da rede.
+
 •	Respeite a privacidade: esteja atento às questões de privacidade e evite escanear dispositivos que você não está autorizado a escanear.
+
 Ao compreender as técnicas de mapeamento e descoberta de rede e utilizar as ferramentas apropriadas, você pode obter informações valiosas sobre seu ambiente de rede, identificar possíveis vulnerabilidades e melhorar a postura geral de segurança de sua organização.
-Identificação do alvo
+
+#### Identificação do alvo
+
 •	Priorização: identificar ativos essenciais (por exemplo, servidores, bancos de dados, dispositivos de rede) e priorizá-los para medidas de segurança.
+
 •	Avaliação de vulnerabilidade: identificar e avaliar vulnerabilidades em sistemas e aplicativos na rede.
+
 •	Modelagem de ameaças: identificação de ameaças potenciais e seu impacto na organização.
+
 •	Coleta de inteligência: coleta de informações sobre possíveis ameaças e adversários.
+
 A identificação de alvos na segurança cibernética é a etapa inicial crucial para entender e mitigar possíveis ameaças. Envolve a identificação dos sistemas, aplicativos e dados específicos de uma organização que são mais valiosos para os invasores e, portanto, exigem as medidas de segurança mais fortes.
+
 Aspectos principais da identificação do alvo:
+
 Inventário de ativos:
 •	Identifique todos os ativos essenciais: isso inclui servidores, estações de trabalho, bancos de dados, dispositivos de rede, aplicativos, armazenamentos de dados e qualquer outro recurso valioso.
+
 •	Categorize ativos: classifique os ativos com base em sua criticidade (por exemplo, alta, média, baixa) e sensibilidade (por exemplo, confidencial, sensível, pública).
+
 •	Documente as informações dos ativos: reúna informações detalhadas sobre cada ativo, como localização, proprietário, finalidade e vulnerabilidades associadas.
+
 Modelagem de ameaças:
 •	Identifique possíveis ameaças: analise o ambiente da organização e identifique possíveis ameaças, como ataques de malware, golpes de phishing, violações de dados e ataques de negação de serviço.
+
 •	Avalie as vulnerabilidades: avalie o impacto potencial dessas ameaças em ativos essenciais.
+
 •	Determine os vetores de ataque: identifique os possíveis pontos de entrada para os invasores, como sistemas voltados para a Internet, dispositivos de funcionários e fornecedores terceirizados.
+
 Priorização:
 •	Concentre-se em metas de alto valor: priorize a proteção dos ativos que são mais importantes para as operações da organização e que contêm os dados mais confidenciais.
+
 •	Aloque recursos de forma eficaz: concentre os recursos de segurança nos ativos mais críticos para maximizar o retorno sobre o investimento.
+
 Monitoramento contínuo:
 •	Revise e atualize regularmente os inventários de ativos: à medida que a organização evolui, novos ativos são adicionados e os existentes podem mudar.
+
 •	Monitore novas ameaças: mantenha-se informado sobre as ameaças e vulnerabilidades mais recentes para ajustar as medidas de segurança adequadamente.
+
 Ferramentas e técnicas
 •	Ferramentas de verificação de vulnerabilidades: ferramentas como Nmap, Nessus e OpenVAS podem ser usadas para identificar vulnerabilidades em sistemas e aplicativos.
+
 •	Feeds de inteligência de ameaças: assine feeds de inteligência de ameaças de fontes confiáveis para se manter informado sobre as ameaças e vulnerabilidades mais recentes.
+
 •	Avaliações de risco: realize avaliações de risco regulares para identificar e priorizar possíveis ameaças e vulnerabilidades.
+
 •	Sistemas de gerenciamento de informações e eventos de segurança (SIEM): colete e analise registros de segurança para identificar atividades suspeitas.
+
 Importância da identificação do alvo:
 •	Postura de segurança aprimorada: ao se concentrar nos ativos mais críticos, as organizações podem alocar seus recursos de segurança com mais eficiência.
+
 •	Risco reduzido de violações: a identificação proativa e a mitigação de vulnerabilidades podem reduzir significativamente o risco de ataques cibernéticos bem-sucedidos.
+
 •	Conformidade com os regulamentos: muitos regulamentos (por exemplo, GDPR, HIPAA) exigem que as organizações identifiquem e protejam dados confidenciais.
+
 •	Tomada de decisão aprimorada: decisões informadas sobre investimentos em segurança podem ser tomadas com base em uma compreensão clara dos ativos mais importantes da organização.
+
 Ao identificar e priorizar metas de forma eficaz, as organizações podem melhorar significativamente sua postura geral de segurança e se proteger melhor contra ameaças cibernéticas.
-Digitalização em rede e impressão digital
+
+#### Digitalização em rede e impressão digital
+
 Escaneamento de rede
 Técnica fundamental em segurança da informação que envolve a manutenção de uma rede para identificar dispositivos, serviços e vulnerabilidades. É como fazer um censo da sua rede para entender o que está conectado e como está configurado. 
+
 Por que realizar a varredura de rede?
 •	Inventário de ativos: Identifique todos os dispositivos conectados à rede, incluindo servidores, estações de trabalho, dispositivos IoT, etc.
 •	Descoberta de serviços: Identifique os serviços em execução em cada dispositivo (HTTP, SSH, FTP, etc.).
 •	Identificação de vulnerabilidades: Encontre vulnerabilidades conhecidas em sistemas e serviços.
 •	Mapeamento da topologia da rede: Visualize a estrutura da rede e as conexões entre os dispositivos.
+
 Ferramentas comuns para escaneamento em rede:
 •	Nmap: Uma das ferramentas mais populares e versáteis para armazenamento em rede. Permite realizar diversas tarefas, como entrega de portas, detecção de sistemas operacionais e identificação de serviços.
 •	Nessus: Uma ferramenta comercial focada em vulnerabilidades, mas que também possui recursos de descoberta de redes.
 •	OpenVAS: Uma alternativa de código aberto ao Nessus, oferecendo funcionalidades semelhantes.
 •	Wireshark: Embora seja um analisador de pacotes, o Wireshark pode ser usado para descobrir dispositivos na rede capturando o tráfego.
+
 Tipos de mercadoria:
 •	Varredura de hosts: Identifica dispositivos ativos na rede.
+
 •	Varredura de portas: Identifica as portas abertas em cada dispositivo, indicando os serviços em execução.
+
 •	Vulnerabilidade: Identifique vulnerabilidades conhecidas nos sistemas e serviços.
+
 •	Fornecimento de serviços: Identifica o tipo de serviço em execução em cada porta aberta.
+
 Considerações importantes:
+
 •	Permissões: Certifique-se de ter as permissões necessárias para realizar tarefas em uma rede.
 •	Alcance: Defina o escopo da entrega para evitar um impacto negativo na rede.
 •	Velocidade: Varreduras completas podem levar tempo, especialmente em grandes redes.
