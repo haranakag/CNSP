@@ -2256,17 +2256,11 @@ Modelo OSI
 Há 7 camadas no modelo OSI e cada camada tem sua função específica no tratamento de dados. Todas as camadas são mencionadas abaixo:
 
 •	Camada física
-
 •	Camada de link de dados
-
 •	Camada de rede
-
 •	Camada de transporte
-
 •	Camada de sessão
-
 •	Camada de apresentação
-
 •	Camada de aplicação
 
 
@@ -2292,7 +2286,6 @@ A camada de enlace de dados é responsável pela entrega da mensagem de nó a n�
 A camada de enlace de dados é dividida em duas subcamadas:
 
 •	Controle de link lógico (LLC)
-
 •	Controle de acesso à mídia (MAC)
 
 
@@ -2343,7 +2336,6 @@ Funções da camada de transporte
 Serviços fornecidos pela Transport Layer
 
 •	Serviço orientado à conexão
-
 •	Serviço sem conexão
 
 #### Camada 5 — Camada de sessão
@@ -2394,17 +2386,11 @@ Quando transferimos informações de um dispositivo para outro, elas percorrem 7
 Os dados fluem pelo modelo OSI em um processo passo a passo:
 
 •	Camada de aplicativo: os aplicativos criam os dados.
-
 •	Camada de apresentação: os dados são formatados e criptografados.
-
 •	Camada de sessão: as conexões são estabelecidas e gerenciadas.
-
 •	Camada de transporte: os dados são divididos em segmentos para uma entrega confiável.
-
 •	Camada de rede: os segmentos são empacotados em pacotes e roteados.
-
 •	Camada de enlace de dados: os pacotes são emoldurados e enviados para o próximo dispositivo.
-
 •	Camada física: os quadros são convertidos em bits e transmitidos fisicamente.
 
 Cada camada adiciona informações específicas para garantir que os dados cheguem ao destino corretamente, e essas etapas são revertidas na chegada.
@@ -2448,7 +2434,7 @@ Camada	Trabalhando	Unidade de dados de protocolo	Protocolos
 
 7 — Camada de aplicação	Ajuda na identificação do cliente e na sincronização da comunicação.	Dados	FTP, SMTP, DNS, DHCP, etc.
 
-Por que o modelo OSI é importante?
+**Por que o modelo OSI é importante?**
 
 O modelo OSI é importante porque fornece ao usuário uma estrutura clara de “como os dados se movem na rede?”. Como o modelo OSI consiste em 7 camadas, cada camada tem sua função específica e, por isso, ajuda a entender, identificar e resolver facilmente os problemas complexos da rede, concentrando-se em uma das camadas e não na rede inteira.
 Como a Internet moderna não prefere o modelo OSI, ainda assim, o modelo OSI ainda é muito útil para resolver problemas de rede. Isso ajuda as pessoas a entenderem os conceitos de rede com muita facilidade.
@@ -2487,7 +2473,7 @@ O modelo OSI define a comunicação de um sistema de computação em 7 camadas d
 
 ### Protocolos de descoberta de rede
 
-*O que é IPv4?*
+**O que é IPv4?**
 
 IPv4, ou Internet Protocol versão 4, é o sistema de endereçamento original da Internet, introduzido em 1983. Ele usa um esquema de endereços de 32 bits, que teoricamente permite mais de 4 bilhões de endereços exclusivos (2^32). Os endereços IPv4 geralmente são exibidos em formato decimal, divididos em quatro octetos separados por pontos. Por exemplo, 192.168.1.1 é um endereço IPv4 comum que você pode encontrar em uma rede doméstica.
 
@@ -2827,34 +2813,56 @@ Considerações importantes:
 •	Alcance: Defina o escopo da entrega para evitar um impacto negativo na rede.
 •	Velocidade: Varreduras completas podem levar tempo, especialmente em grandes redes.
 •	Legalidade: Verifique as leis e regulamentos locais antes de realizar entregas em redes que não sejam suas.
+
 Exemplo de comando Nmap:
 
 Mapa Bash -sV 192.168.1.0/24
 •	-sS: Realiza uma varredura TCP SYN (semi-aberta) para identificar hosts ativos e portas abertas.
 •	-sV: Tente identificar a versão dos serviços em execução nas portas abertas.
 •	192.168.1.0/24: Especifica a faixa de IP a ser fechada.
+
 Por que a digitalização em rede é importante para a segurança?
+
 •	Identificação de vulnerabilidades: Permite identificar sistemas vulneráveis antes que sejam explorados por atacantes.
+
 •	Mapeamento da infraestrutura: Auxilia na criação de inventários de ativos e na visualização da topologia da rede.
+
 •	Detecção de dispositivos não autorizados: Permite identificar dispositivos não autorizados conectados à rede.
+
 •	Monitoramento contínuo: A realização de entregas regulares pode ajudar a detectar mudanças não autorizadas na rede.
+
 Em resumo, a digitalização em rede é uma ferramenta essencial para qualquer profissional de segurança da informação. Ao entender os princípios e as ferramentas de escaneamento de rede, você estará melhor preparado para proteger sua organização contra ameaças cibernéticas.
-Impressão digital
+
+#### Impressão digital
+
 O que exatamente é a impressão digital de cibersegurança? É uma técnica de ponta que detecta ameaças cibernéticas analisando as “impressões digitais” exclusivas dos sistemas e do tráfego de rede. Sem exagerar, este artigo o guiará pela essência da impressão digital de segurança cibernética e sua importância no cenário moderno de segurança cibernética.
+
 Principais conclusões
+
 •	A impressão digital de cibersegurança, uma etapa fundamental na coleta de informações de segurança cibernética, é um processo essencial para reunir perfis detalhados de sistemas para identificar possíveis ameaças, fraquezas e a presença de atividades maliciosas, analisando o tráfego da rede e investigando os sistemas visados.
+
 •	Diferentes técnicas de impressão digital, incluindo ativa, passiva e híbrida, são utilizadas para identificar sistemas, software e vulnerabilidades, cada uma com abordagens exclusivas, como análise de tráfego, análise do sistema e tratamento de protocolos criptografados para aprimorar a detecção de ameaças e a segurança da rede.
+
 •	A eficácia da impressão digital de segurança cibernética é amplificada por uma variedade de ferramentas e métodos, incluindo Nmap, p0f e xProbe2, embora deva ser usada sob rígidas diretrizes legais e éticas para evitar impressões digitais não autorizadas e proteger a privacidade do usuário.
-Desmistificando a impressão digital de segurança cibernética
+
+#### Desmistificando a impressão digital de segurança cibernética
+
 A impressão digital de cibersegurança pode ser comparada a um Sherlock Holmes digital, pois coleta pistas meticulosamente para criar um perfil abrangente de um sistema. O processo envolve a varredura do tráfego da rede, o lançamento de pacotes criados especificamente ou a análise de pacotes de saída de um sistema de destino.
+
 No entanto, vale a pena notar que a camada de rede do modelo Open Systems Interconnection (OSI), conforme destacado por Adrian Ordorica e Dale R. Thompson, do Departamento de Ciência e Engenharia da Computação da Universidade do Arkansas, não fornece inerentemente informações explícitas sobre o sistema operacional do dispositivo de rede que gera tráfego. Apesar dessa limitação, os profissionais de segurança cibernética utilizam técnicas de impressão digital para coletar detalhes cruciais, incluindo sistema operacional, protocolos e outros atributos do sistema. Esses insights são inestimáveis para identificar e mitigar ameaças potenciais com precisão.
+
 O objetivo principal da impressão digital de segurança cibernética reflete o de um detetive experiente: expor possíveis fraquezas e combater ameaças cibernéticas avançadas. Assim como um detetive constrói o perfil de um possível suspeito, a impressão digital de cibersegurança cria perfis de servidor capazes de reconhecer identificadores e características distintos de possíveis ameaças cibernéticas, tornando-a uma ferramenta essencial para especialistas em segurança de rede.
-Testando serviços de rede
+
+#### Testando serviços de rede
+
 Muitas empresas testarão sua rede para garantir que ela esteja funcionando adequadamente e fornecendo o nível certo de serviço aos usuários. Portanto, serve para garantir a eficiência operacional dos processos internos e, onde os produtos e serviços são vendidos on-line, garantir uma experiência tranquila para o cliente. No entanto, os testes de rede também são importantes para a segurança cibernética empresarial.
-Neste blog, vamos nos aprofundar nos testes de segurança de rede — o que eles significam, por que são importantes e os tipos de testes disponíveis atualmente.
-Por que testar uma rede?
+
+#### Por que testar uma rede?
+
 Uma rede pode representar um risco significativo de segurança para as empresas devido à quantidade de software e dispositivos com os quais ela interage. As vulnerabilidades surgem quando uma rede tem pontos fracos que podem ser explorados por ciberatacantes. Esses pontos fracos podem ser encontrados em vários locais, como servidores, firewalls, roteadores, modems, portas de conexão física, sistemas operacionais e atualizações de software. Qualquer uma delas pode servir como uma forma de os criminosos obterem acesso à rede e causarem danos aos sistemas da empresa.
+
 As redes podem enfrentar uma série de ameaças. Dessa forma, não é possível reconhecer um ataque cibernético de rede monitorando apenas uma determinada parte da infraestrutura ou um tipo específico de dados. Além disso, as redes geralmente enfrentam vários ataques empregando técnicas diferentes ao mesmo tempo. As possíveis ameaças à segurança da rede incluem:
+
 •	Malware
 •	Vírus
 •	Botnets
@@ -2864,71 +2872,120 @@ As redes podem enfrentar uma série de ameaças. Dessa forma, não é possível 
 •	Ataques do Man-in-the-Middle
 •	Ataques de phishing e engenharia social
 •	Vigilância física e sabotagem
+
 A segurança da rede é importante, pois protege os dados pessoais de funcionários e clientes, bem como outras informações que podem ser usadas para prejudicar os negócios. Proteger esses dados é vital, pois geralmente é essencial para as operações diárias. Além disso, se os dados do usuário forem comprometidos, isso poderá prejudicar a integridade da organização, possivelmente fazendo com que os clientes procurem outros fornecedores.
-O processo de um teste de rede
+
+#### O processo de um teste de rede
+
 O objetivo do teste é simular como um invasor conseguiria obter acesso à rede. Com isso, o objetivo é revelar quaisquer possíveis fraquezas que possam ser usadas como pontos de entrada. As informações fornecidas pelo teste de rede podem então ser usadas para elaborar planos de reforço direcionados. Isso fortalecerá a segurança em áreas específicas e implementará medidas específicas.
+
 Quando você executa um teste em sua rede com a ajuda de profissionais de segurança cibernética, ele normalmente segue estas etapas:
-1.	Planejamento
+
+1\.	Planejamento
 Primeiro, discutiremos com você quais métodos serão usados no teste e como os resultados serão medidos. Esses dois aspectos variam de acordo com o escopo e os objetivos do teste. Nesse estágio, um hacker ético também identificará as áreas críticas da sua rede que podem conter vulnerabilidades.
+
 2\. Sondando
 O hacker ético então começa a usar soluções de teste para examinar como a rede responde aos ataques cibernéticos. Por exemplo, se houver um sistema de detecção de ameaças em terminais, o testador ficará ciente disso. Isso permite que eles entendam como várias partes da rede se comunicam, juntamente com a natureza da resposta. O resultado é que o hacker ético agora sabe operar da maneira mais provável de contornar qualquer defesa automatizada.
+
 3\. Ataques simulados
 Após a pesquisa de rede apropriada, um hacker ético simulará uma série de ataques. Isso pode incluir qualquer um dos tipos de ameaças de rede já discutidos. Se uma vulnerabilidade de rede for encontrada, eles tomarão medidas para explorar a fraqueza, como tentar interromper o tráfego, aumentar os privilégios e roubar dados.
+
 O testador pode então medir a vulnerabilidade pela quantidade de dano teórico que ele seria capaz de infligir. O tempo também pode ser um fator aqui. Depois de obter acesso, os testadores podem tentar fazer alterações que bloqueiem os administradores internos da rede.
 4\. Analisando os resultados
 O teste termina quando o testador tiver certeza de que não há mais informações que possam ser obtidas sobre a segurança da rede. Depois disso, um relatório será criado para mostrar suas descobertas ao proprietário da empresa. Os relatórios de teste contêm informações sobre as vulnerabilidades encontradas, detalhes da ação corretiva recomendada e o prazo provável para resolver qualquer problema de rede.
-Diferentes tipos de testes de rede
+
+**Diferentes tipos de testes de rede**
+
 Todos os testes de rede seguirão a estrutura geral descrita acima. No entanto, existem variações com base na abordagem do testador e nos aspectos focados. São elas:
+
 •	Teste de caixa branca — os testadores têm um conhecimento profundo da rede e de como sua infraestrutura foi construída. Portanto, eles se preocupam principalmente em examinar a implementação do código, o fluxo de controle, o fluxo de dados, o tratamento de erros e outros recursos técnicos.
+
 •	Teste de caixa preta — o testador não tem nenhum conhecimento prévio da rede ou dos sistemas da organização. Dessa forma, esse método é o mais eficaz para simular os efeitos de um ataque cibernético real.
+
 •	Teste de caixa cinza — sem surpresa, isso combina elementos de testes de caixa branca e preta. O hacker ético recebe uma quantidade selecionada de informações sobre a rede. Os testes de caixa cinza são ideais para avaliar o risco que os usuários privilegiados representam para a empresa.
-Melhores práticas de segurança de rede
+
+**Melhores práticas de segurança de rede**
+
 Muitas vezes, um relatório de teste de rede recomendará as seguintes práticas para garantir que sua segurança seja mantida dentro do padrão. A primeira é manter seu software e sistemas operacionais atualizados. Muitas vulnerabilidades de rede são resolvidas por meio de atualizações do sistema. Portanto, é possível que versões antigas de softwares ainda contenham pontos fracos. Pelo mesmo motivo, deve-se tomar cuidado para garantir que dispositivos antigos fora de uso ainda não estejam conectados à sua rede.
+
 Em seguida, mantenha um registro dos ativos mais valiosos da empresa e de como eles podem ser acessados. Isso deve ser um indicador de onde sua segurança deve ser direcionada, pois uma violação nessas áreas traz um risco mais significativo. Esses registros devem então ser usados para criar um plano de resposta no caso de sua rede ser violada.
+
 Por fim, suas políticas e procedimentos de segurança cibernética devem ser revisados regularmente. O cenário de ameaças está mudando constantemente, por isso é importante que seus recursos sejam alocados de forma eficiente.
-Criptografia
+
+### Criptografia
 A criptografia é uma técnica de proteger a comunicação convertendo texto simples em texto cifrado. Ela envolve vários algoritmos e protocolos para garantir a confidencialidade, integridade, autenticação e não repúdio dos dados. Neste artigo, discutiremos a criptografia e seus tipos.
-O que é criptografia?
-A criptografia é uma técnica de proteger informações e comunicações por meio do uso de códigos para que somente as pessoas a quem as informações se destinam possam entendê-las e processá-las. Evitando assim o acesso não autorizado às informações. O prefixo “cripta” significa “oculto” e o sufixo “grafia” significa “escrita”. Na criptografia, as técnicas usadas para proteger as informações são obtidas a partir de conceitos matemáticos e de um conjunto de cálculos baseados em regras, conhecidos como algoritmos, para converter mensagens de forma a dificultar sua decodificação. Esses algoritmos são usados para geração de chaves criptográficas, assinatura digital e verificação para proteger a privacidade dos dados, a navegação na web na Internet e para proteger transações confidenciais, como transações com cartão de crédito e débito.
+
+#### O que é criptografia?
+
+A criptografia é uma técnica de proteger informações e comunicações por meio do uso de códigos para que somente as pessoas a quem as informações se destinam possam entendê-las e processá-las. Evitando assim o acesso não autorizado às informações. 
+O prefixo “cripta” significa “oculto” e o sufixo “grafia” significa “escrita”. Na criptografia, as técnicas usadas para proteger as informações são obtidas a partir de conceitos matemáticos e de um conjunto de cálculos baseados em regras, conhecidos como algoritmos, para converter mensagens de forma a dificultar sua decodificação. Esses algoritmos são usados para geração de chaves criptográficas, assinatura digital e verificação para proteger a privacidade dos dados, a navegação na web na Internet e para proteger transações confidenciais, como transações com cartão de crédito e débito.
  
-Características da criptografia
+**Características da criptografia**
+
 •	Confidencialidade: as informações só podem ser acessadas pela pessoa a quem se destinam e nenhuma outra pessoa, exceto ele, pode acessá-las.
+
 •	Integridade: as informações não podem ser modificadas no armazenamento ou na transição entre o remetente e o destinatário pretendido sem que qualquer adição às informações seja detectada.
+
 •	Não repúdio: O criador/remetente da informação não pode negar sua intenção de enviar informações em um estágio posterior.
+
 •	Autenticação: as identidades do remetente e do destinatário são confirmadas. Além disso, o destino/origem das informações é confirmado.
+
 •	Interoperabilidade: a criptografia permite a comunicação segura entre diferentes sistemas e plataformas.
+
 •	Adaptabilidade: a criptografia evolui continuamente para se manter à frente das ameaças à segurança e dos avanços tecnológicos.
-Tipos de criptografia
+
+#### Tipos de criptografia
 1. Criptografia de chave simétrica
 É um sistema de criptografia em que o remetente e o destinatário de uma mensagem usam uma única chave comum para criptografar e descriptografar mensagens. A criptografia de chave simétrica é mais rápida e simples, mas o problema é que o remetente e o destinatário precisam, de alguma forma, trocar as chaves com segurança. Os sistemas de criptografia de chave simétrica mais populares são os Sistemas de Criptografia de Dados (DES) e os Sistemas Avançados de Criptografia (AES).
- 
-Criptografia de chave simétrica
+
 2. Funções de hash
 Não há uso de nenhuma chave nesse algoritmo. Um valor de hash com um tamanho fixo é calculado de acordo com o texto simples, o que impossibilita a recuperação do conteúdo do texto simples. Muitos sistemas operacionais usam funções hash para criptografar senhas.
+
 3. Criptografia de chave assimétrica
 Na criptografia de chave assimétrica, um par de chaves é usado para criptografar e descriptografar informações. A chave pública do remetente é usada para criptografia e a chave privada do destinatário é usada para decodificação. As chaves públicas e privadas são diferentes. Mesmo que a chave pública seja conhecida por todos, o destinatário pretendido só pode decodificá-la porque só ele conhece sua chave privada. O algoritmo de criptografia de chave assimétrica mais popular é o algoritmo RSA.
  
 Criptografia de chave assimétrica
+
 Aplicações da criptografia
+
 •	Senhas de computador: a criptografia é amplamente utilizada na segurança de computadores, principalmente na criação e manutenção de senhas. Quando um usuário faz login, sua senha é criptografada e comparada ao hash que foi armazenado anteriormente. As senhas são criptografadas e criptografadas antes de serem armazenadas. Nessa técnica, as senhas são criptografadas para que, mesmo que um hacker tenha acesso ao banco de dados de senhas, ele não consiga ler as senhas.
+
 •	Moedas digitais: para proteger transações e evitar fraudes, moedas digitais como Bitcoin também usam criptografia. Algoritmos complexos e chaves criptográficas são usados para proteger as transações, tornando quase difícil adulterar ou falsificar as transações.
+
 •	Navegação segura na web: a segurança da navegação on-line é fornecida pelo uso de criptografia, que protege os usuários contra espionagem e ataques intermediários. A criptografia de chave pública é usada pelos protocolos Secure Sockets Layer (SSL) e Transport Layer Security (TLS) para criptografar dados enviados entre o servidor web e o cliente, estabelecendo um canal seguro para comunicação.
+
 •	Assinaturas eletrônicas: as assinaturas eletrônicas servem como o equivalente digital de uma assinatura manuscrita e são usadas para assinar documentos. As assinaturas digitais são criadas usando criptografia e podem ser validadas usando criptografia de chave pública. Em muitos países, as assinaturas eletrônicas são aplicáveis por lei e seu uso está se expandindo rapidamente.
+
 •	Autenticação: a criptografia é usada para autenticação em muitas situações diferentes, como ao acessar uma conta bancária, fazer login em um computador ou usar uma rede segura. Os métodos criptográficos são empregados pelos protocolos de autenticação para confirmar a identidade do usuário e confirmar que ele tem os direitos de acesso necessários ao recurso.
+
 •	Criptomoedas: a criptografia é muito usada por criptomoedas como Bitcoin e Ethereum para proteger transações, impedir fraudes e manter a integridade da rede. Algoritmos complexos e chaves criptográficas são usados para proteger as transações, tornando quase difícil adulterar ou falsificar as transações.
+
 •	Criptografia de Internet de ponta a ponta: a criptografia de ponta a ponta é usada para proteger comunicações bidirecionais, como conversas por vídeo, mensagens instantâneas e e-mail. Mesmo que a mensagem seja criptografada, ela garante que somente os destinatários pretendidos possam lê-la. A criptografia de ponta a ponta é amplamente usada em aplicativos de comunicação como WhatsApp e Signal, e fornece um alto nível de segurança e privacidade para os usuários.
-Tipos de algoritmo de criptografia
+
+#### Tipos de algoritmo de criptografia
+
 •	Advanced Encryption Standard (AES): O AES (Advanced Encryption Standard) é um algoritmo de criptografia popular que usa a mesma chave para criptografia e descriptografia. É um algoritmo de criptografia de bloco simétrico com tamanho de bloco de 128 bits, 192 bits ou 256 bits. O algoritmo AES é amplamente considerado como o substituto do algoritmo DES (padrão de criptografia de dados).
+
 •	Padrão de criptografia de dados (DES): DES (padrão de criptografia de dados) é um algoritmo de criptografia mais antigo usado para converter dados de texto simples de 64 bits em texto cifrado de 48 bits. Ele usa chaves simétricas (o que significa a mesma chave para criptografia e decodificação). É meio antigo para o padrão atual, mas pode ser usado como um alicerce básico para aprender algoritmos de criptografia mais novos.
+
 •	RSA: O RSA é um algoritmo criptográfico assimétrico básico que usa duas chaves diferentes para criptografia. O algoritmo RSA funciona em um conceito de cifra de bloco que converte texto simples em texto cifrado e vice-versa.
+
 •	Algoritmo de hash seguro (SHA): o SHA é usado para gerar impressões digitais exclusivas de tamanho fixo dos dados de entrada, conhecidas como hashes. Variações de SHA, como SHA-2 e SHA-3, são comumente usadas para garantir a integridade e a autenticidade dos dados. A menor alteração nos dados de entrada modifica drasticamente a saída de hash, indicando uma perda de integridade. O hashing é o processo de armazenar pares de valores-chave com a ajuda de uma função de hash em uma tabela de hash.
-Vantagens da criptografia
+
+**Vantagens da criptografia**
+
 •	Controle de acesso: a criptografia pode ser usada para controle de acesso para garantir que somente partes com as permissões adequadas tenham acesso a um recurso. Somente aqueles com a chave de decodificação correta podem acessar o recurso graças à criptografia.
+
 •	Comunicação segura: Para uma comunicação on-line segura, a criptografia é crucial. Ele oferece mecanismos seguros para transmitir informações privadas, como senhas, números de contas bancárias e outros dados confidenciais pela Internet.
+
 •	Proteção contra ataques: a criptografia ajuda na defesa contra vários tipos de ataques, incluindo ataques repetidos e ataques intermediários. Ele oferece estratégias para detectar e impedir esses ataques.
+
 •	Conformidade com os requisitos legais: a criptografia pode ajudar as empresas a atender a uma variedade de requisitos legais, incluindo legislação de proteção de dados e privacidade.
-Noções básicas de segurança do Active Directory
+
+### Noções básicas de segurança do Active Directory
+
 O Active Directory (AD) é um componente essencial de muitas organizações baseadas em Windows, fornecendo gerenciamento centralizado de usuários, computadores e outros recursos de rede. Proteger o AD é fundamental para proteger toda a sua rede. Aqui está um resumo dos principais conceitos de segurança:
+
 1. Segurança da conta
 •	Senhas fortes:
 o	Complexidade: aplique políticas de senha fortes (tamanho, tipos de caracteres, complexidade).
@@ -2939,17 +2996,21 @@ o	Privilégio mínimo: conceda somente as permissões necessárias para cada con
 o	Contas de serviço: use contas de serviço dedicadas para aplicativos e serviços em vez de contas de usuário de domínio.
 o	Autenticação multifatorial (MFA): implemente a MFA para todas as contas privilegiadas (por exemplo, administradores de domínio).
 •	Desativação da conta: desative imediatamente contas inativas ou comprometidas.
+
 2. Política de grupo
 •	Controle centralizado: utilize a Política de Grupo para impor configurações de segurança em todo o domínio, como políticas de senha, restrições de software e configurações de segurança.
 •	Modelos de segurança: utilize modelos de segurança pré-criados para configurações comuns e requisitos de conformidade.
 •	Auditoria regular: revise e audite regularmente as configurações da Política de Grupo para garantir que elas sejam efetivas e atualizadas.
+
 3. Segurança do controlador de domínio
 •	Segurança física: garanta a segurança física dos controladores de domínio colocando-os em locais seguros, usando bloqueios físicos e implementando controles ambientais adequados.
 •	Virtualização: considere a virtualização de controladores de domínio para melhorar a segurança e a recuperação de desastres.
 •	Patches e atualizações regulares: mantenha os controladores de domínio atualizados com os patches e atualizações de segurança mais recentes da Microsoft.
+
 4. Auditoria do Active Directory
 •	Registros de eventos: revise regularmente os registros de eventos de segurança em busca de atividades suspeitas, como tentativas de login malsucedidas, modificações na conta e violações de políticas de segurança.
 •	Sistemas de gerenciamento de eventos e informações de segurança (SIEM): utilize ferramentas de SIEM para coletar, analisar e correlacionar eventos de segurança de várias fontes, incluindo o Active Directory.
+
 5. Outras medidas de segurança
 •	Backups regulares: faça backups regulares do banco de dados do Active Directory para garantir a recuperação dos dados em caso de desastre.
 •	Auditorias de segurança: realize auditorias de segurança regulares para identificar e solucionar possíveis vulnerabilidades.
@@ -2960,10 +3021,15 @@ Princípios fundamentais de segurança:
 •	Monitoramento e auditoria regulares: monitore e audite continuamente seu ambiente do Active Directory em busca de atividades suspeitas.
 •	Mantenha-se informado: mantenha-se atualizado com as ameaças e vulnerabilidades mais recentes relacionadas ao Active Directory.
 Ao implementar essas medidas de segurança, você pode melhorar significativamente a segurança do seu ambiente do Active Directory e proteger os dados e sistemas valiosos da sua organização.
-Princípios básicos de segurança do Linux e do Windows
+
+### Princípios básicos de segurança do Linux e do Windows
+
 Em comparação com outros sistemas operacionais, como Windows e macOS, o Linux tem menos vulnerabilidades. No entanto, o Linux não está imune a todos os tipos de ataques cibernéticos. As vulnerabilidades mais comuns nos sistemas Linux são escalonamento de privilégios, corrupção de memória e divulgação de informações. Os ciberatacantes usam essas vulnerabilidades para obter acesso não autorizado a um sistema Linux e roubar dados.
+
 Relatórios de fontes como The National Vulnerability Database (NVD) e Crowdstrike mostram um aumento nas vulnerabilidades do Linux a cada ano. Por exemplo, houve 1.958 vulnerabilidades do Linux relatadas em 2020. Em 2021, houve um aumento de 35% no malware direcionado a sistemas Linux em comparação com 2020. E em 2022, o número de novos malwares Linux atingiu quase 1,7 milhão, um aumento de 650% em relação ao ano anterior.
+
 Ransomwares e vulnerabilidades significativas do Linux ao longo dos anos são:
+
 1.	Shellshock (2014 - ativo). Uma vulnerabilidade no shell do Bash que permite que invasores executem códigos aleatórios executando uma variável de ambiente especialmente preparada.
 2.	Ghost (2015 - resolvido). Uma vulnerabilidade na Biblioteca GNU C (glibc) que permitia que invasores executassem código arbitrário enviando uma resposta DNS específica.
 3.	Dirty COW (2016 - resolvido). Essa vulnerabilidade afetou o kernel Linux e deu aos invasores acesso root ao explorar uma condição de corrida no sistema de gerenciamento de memória.
@@ -2974,20 +3040,28 @@ Ransomwares e vulnerabilidades significativas do Linux ao longo dos anos são:
 8.	Text4Shell ou Act4Shell (2022 - ativo). Uma vulnerabilidade crítica de execução remota de código (RCE) que abusa da funcionalidade de interpolação de texto do Apache Commons na substituição de strings.
 9.	Vulnerabilidade do kernel Linux (2023 - ativo). Foi encontrado um problema de segurança na funcionalidade NVMe do kernel Linux, especificamente na função nvmet_setup_auth (), que pode resultar em um ataque de negação de serviço (DoS) antes da autenticação em uma máquina remota.
 10.	Vulnerabilidade do Signal Desktop (2023 - ativo). Uma vulnerabilidade no software Signal Desktop permite que os invasores acessem anexos de mensagens confidenciais.
-Dicas e melhores práticas de segurança do Linux
+    
+**Dicas e melhores práticas de segurança do Linux**
+
 À medida que o uso de sistemas Linux continua crescendo, é crucial implementar medidas de segurança adequadas para proteger um sistema contra possíveis ameaças. As seções abaixo oferecem uma série de dicas práticas e melhores práticas para aprimorar a segurança de um sistema Linux.
+
 1. Use senhas fortes
 (Mecanismo básico de segurança)
 Use senhas fortes e altere-as regularmente como uma etapa básica para proteger seu sistema Linux. Senhas fortes evitam o acesso não autorizado ao sistema e reduzem o risco de roubo de identidade, perda de dados e outros incidentes de segurança.
 Uma senha forte tem pelo menos 12 caracteres e inclui uma mistura de letras maiúsculas e minúsculas, números e caracteres especiais. Isso torna os ataques de força bruta extremamente mais difíceis.
 Alterar senhas regularmente também melhora a segurança. O processo reduz o risco de reutilização e exposição da senha, dando a um invasor em potencial um prazo limitado para explorar a senha caso ela seja comprometida.
+
 2. Verifique se todas as contas têm senhas
 (Mecanismo básico de segurança)
 Contas sem senhas permitem que qualquer pessoa faça login no sistema sem qualquer autenticação, comprometendo a segurança e a confidencialidade dos dados do sistema. Portanto, certifique-se de verificar se nenhuma conta tem senhas vazias.
+
 Execute o comando awk com as seguintes opções:
+
 sudo awk -F: '($2 == “”) {print $1}' /etc/shadow
 ! [saída do terminal sudo awk -f] [imagem 15]
+
 Esse comando pesquisa o arquivo /etc/shadow, que contém informações sobre senhas de contas de usuário, e imprime os nomes de todas as contas com um campo de senha vazio.
+
 Como contas com senhas vazias representam um sério risco de segurança, considere as seguintes ações:
 •	Defina uma senha. Por exemplo, atribua uma nova senha a um usuário com o comando passwd:
 o	sudo passwd [nome de usuário]
@@ -3000,6 +3074,7 @@ O usuário agora não consegue fazer login usando sua senha.
 Exclua a conta. Remova contas desnecessárias com:
 sudo userdel [nome de usuário]
 O comando não mostra nenhuma saída se executado corretamente.
+
 3. Configurar o envelhecimento da senha
 (Mecanismo básico de segurança)
 O envelhecimento da senha é a prática de exigir que os usuários alterem as senhas regularmente. Alterações regulares de senha reduzem a chance de os usuários reutilizarem senhas anteriores. A prática também evita ataques de quebra de senhas, que geralmente são bem-sucedidos por causa de senhas fracas que não são alteradas com frequência.
@@ -3010,6 +3085,7 @@ sudo change -M 60 -m 10 -W 14 [nome de usuário]
 sudo passwd -x 60 [nome de usuário]! 
  [sudo passwd -x 60 Nova saída do terminal de usuário] [imagem 17]
 O comando define a data de expiração da senha para NewUser em 60 dias.
+
 4. Restrinja o uso de senhas anteriores no Linux
 (Mecanismo básico de segurança)
 Impeça que todos os usuários reutilizem senhas antigas. Senhas antigas podem ter sido comprometidas e os invasores podem estar ativamente tentando tirar proveito disso para invadir o sistema.
@@ -3019,9 +3095,12 @@ Para evitar ataques de reutilização de senhas:
 3.	Verifique regularmente os registros do sistema em busca de atividades suspeitas, como repetidas tentativas de login malsucedidas, para detectar possíveis ameaças à segurança relacionadas à senha.
 4.	Armazene senhas com hash usando uma função hash criptográfica forte, como Message-Digest Algorithm (MDA), Secure Hash Algorithm (SHA) ou NTLM.
 5.	Use um gerenciador de senhas corporativo para gerar e armazenar senhas exclusivas e seguras para cada conta.
-5. Garanta a segurança do servidor OpenSSH
+  
+Garanta a segurança do servidor OpenSSH
+
 (Mecanismo de segurança intermediário)
 O OpenSSH é uma implementação amplamente usada e segura do SSH para sistemas Linux. Ele fornece criptografia para dados em trânsito, métodos robustos de autenticação e uma forma segura de administrar sistemas e transferir arquivos remotamente. Para garantir a segurança do OpenSSH, minimize as vulnerabilidades da ferramenta.
+
 Proteja o servidor OpenSSH seguindo estas dicas:
 •	Use portas SSH não padrão.
 •	Limite o acesso do usuário e desative o login root.
@@ -3033,6 +3112,7 @@ Proteja o servidor OpenSSH seguindo estas dicas:
 •	Desative protocolos e recursos não utilizados.
 •	Implemente um firewall.
 •	Monitore os registros regularmente.
+
 6. Desativar o login raiz via SSH
 (Mecanismo de segurança intermediário)
 As máquinas Linux têm acesso root externo habilitado por padrão. Isso deixa uma vulnerabilidade de segurança SSH aberta que os hackers podem explorar com ataques de força bruta. A desativação do login raiz SSH do servidor impede que pessoas não autorizadas obtenham controle sobre o sistema. Uma conta raiz ativa permite que os invasores obtenham ou adivinhem a senha raiz com privilégios administrativos completos.
@@ -3441,23 +3521,40 @@ Em cenários mais elaborados, o atacante pode organizar reuniões presenciais co
 Deepfakes: ver não é acreditar
 Os deepfakes, que usam inteligência artificial (IA) para criar áudio, vídeo ou imagens realistas, mas falsos, que se fazem passar por pessoas reais, são cada vez mais usados em vários ataques de engenharia social para criar cenários convincentes, mas fraudulentos. Eles utilizam áudio e vídeo manipulados para induzir os alvos a divulgar informações confidenciais ou realizar ações que, de outra forma, não fariam.
 Exemplo: em 2019, um ataque deepfake teve como alvo uma empresa de energia com sede no Reino Unido. Os malfeitores usaram o áudio gerado por IA para se passar pela voz do diretor executivo da empresa-mãe. Eles ligaram para o CEO da empresa-alvo, instruindo-o a transferir cerca de 243.000 dólares para um fornecedor húngaro com urgência. A voz foi tão convincente que o executivo atendeu à solicitação.
-Nem tanto Quid Pro Quo
+
+### Nem tanto Quid Pro Quo
+
 Outro tipo de engenharia social são os ataques quid pro quo, que envolvem a oferta de um serviço ou benefício em troca de informações. Os atacantes podem prometer suporte técnico, software livre ou outros serviços para persuadir as vítimas a revelar informações confidenciais.
+
 Exemplos: Um dos ataques quid pro quo mais comuns envolve fraudadores se passando por representantes da Administração da Previdência Social dos EUA (SSA). Esses fraudadores contatam indivíduos aleatoriamente, solicitando a confirmação de seus números de previdência social sob falsos pretextos, permitindo o roubo de identidade.
+
 Como alternativa, agentes mal-intencionados identificados pela Federal Trade Commission (FTC) criam sites falsificados da SSA para obter informações pessoais ilicitamente. Assustadoramente, os atacantes não precisam ser tão astutos, pois incidentes anteriores demonstraram que os funcionários do escritório estão dispostos a divulgar suas senhas em troca de itens baratos, como canetas ou barras de chocolate.
+
 Armadilhas de mel: amor, mentiras e furto
+
 As armadilhas de mel envolvem a criação de personas on-line falsas para estabelecer relacionamentos românticos com as vítimas. O objetivo é ganhar e explorar a confiança da vítima para obter ganhos financeiros ou acesso a informações confidenciais.
+
 Exemplo: De acordo com relatórios policiais, um homem da Ilha de Vancouver perdeu $150.000 em um golpe romântico. Durante vários meses, o golpista solicitou dinheiro para passagens aéreas, contas médicas e várias outras despesas.
+
 Piggybacking: Pegando uma carona
+
 Duas outras ameaças generalizadas são a utilização não autorizada e o uso de carona. O uso não autorizado, em essência, é o acesso não autorizado a espaços protegidos, que os malfeitores obtêm ao explorar a confiança de usuários reais. Envolve obter acesso físico a uma área restrita seguindo alguém com acesso legítimo e explorando a cortesia de outras pessoas para entrar sem a devida autorização. Também pode envolver clonagem de crachás, uso de dispositivos autônomos ou falsificação de identidade. O carona acontece quando alguém tenta pegar carona na tentativa de extorsão de um hacker.
+
 Exemplo: em 2018, um indivíduo admitiu culpa no Tribunal da Coroa de Reading, na Inglaterra, por acesso não autorizado a computadores e chantagem enquanto trabalhava na Oxford Biomedica, uma empresa de terapia genética. Houve um incidente em que a empresa enfrentou um pedido de resgate de $370.000 em Bitcoin após um ataque.
+
 Um funcionário (ironicamente parte da equipe de resposta) alterou as notas de resgate para redirecionar os pagamentos para sua carteira de criptomoedas, lançando efetivamente um ataque separado contra seu empregador.
+
 Compromisso de e-mail comercial: o jogo da falsificação de identidade
+
 O comprometimento de e-mail comercial (BEC) é um ataque cibernético sofisticado em que os criminosos coletam meticulosamente informações sobre a estrutura de uma organização e os principais executivos. Usando esse conhecimento, eles exploram a confiança associada a cargos de alto escalão, como o CFO, para manipular os funcionários a transferir fundos ou divulgar informações confidenciais.
+
 Ao obter acesso à conta de e-mail de um executivo, os invasores se fazem passar por ele para solicitar transações financeiras urgentes, como o pagamento de faturas fraudulentas. Eles exploram a natureza sensível ao tempo dessas transações para minimizar as chances de detecção.
 O BEC é um dos ataques mais comuns e um dos tipos mais caros de cibercrime. Entre 2013 e 2022, o FBI afirma que os ataques ao BEC causaram cerca de 50,8 bilhões de dólares em perdas em todo o mundo.
+
 Combatendo a exploração
+
 Os ataques de engenharia social são um flagelo crescente no cenário digital atual. Eles exploram a psicologia humana em vez das fraquezas tecnológicas, o que os torna particularmente difíceis de se defender. A conscientização e a educação são cruciais para combater esses ataques.
+
 As empresas devem integrar as seguintes recomendações em seu treinamento de conscientização sobre segurança:
 •	Tenha cuidado com e-mails de fontes desconhecidas. Se você receber um e-mail suspeito, verifique sua legitimidade entrando em contato diretamente com o remetente por telefone ou pessoalmente.
 •	Seja cético em relação a ofertas não solicitadas. Se algo parece bom demais para ser verdade, provavelmente é.
@@ -3466,8 +3563,10 @@ As empresas devem integrar as seguintes recomendações em seu treinamento de co
 •	Familiarize-se com a política de privacidade da sua empresa para entender os protocolos relacionados às permissões de acesso para indivíduos externos.
 •	Valide solicitações urgentes de contatos internos antes de agir, envolvendo principalmente transações financeiras ou informações confidenciais.
 •	Promova uma cultura de conscientização sobre riscos para manter os funcionários vigilantes. A engenharia social prospera com base no erro humano, portanto, incorporar a consciência de segurança na mentalidade organizacional é crucial. Os funcionários devem saber como reconhecer e relatar possíveis incidentes imediatamente.
+
 Ao compreender os tipos comuns de ataques de engenharia social e reconhecer suas implicações no mundo real, indivíduos e organizações podem se proteger melhor dessas ameaças generalizadas.
 Ferramentas e estruturas de segurança de rede (como Nmap, Wireshark etc)
+
 Essa área do exame CNSP se concentra nas ferramentas e estruturas práticas usadas pelos profissionais de segurança cibernética. Aqui está um resumo das principais ferramentas e sua importância:
 1. Escaneamento e descoberta de rede
 •	Nmap:
@@ -3507,62 +3606,98 @@ Coleta de inteligência de código aberto (OSINT)
 A Inteligência de Código Aberto (OSINT) é um método de coleta de informações públicas ou de outras fontes abertas, que pode ser usado por especialistas em segurança, agências nacionais de inteligência ou cibercriminosos. Quando usado por defensores cibernéticos, o objetivo é descobrir informações publicamente disponíveis relacionadas à sua organização que possam ser usadas por atacantes e tomar medidas para evitar esses ataques futuros.
 A OSINT utiliza tecnologia avançada para descobrir e analisar grandes quantidades de dados, obtidos pela varredura de redes públicas, de fontes publicamente disponíveis, como redes de mídia social, e da deep web — conteúdo que não é rastreado pelos mecanismos de pesquisa, mas ainda está acessível ao público.
 As ferramentas OSINT podem ser de código aberto ou proprietárias: a distinção deve ser feita entre código-fonte aberto e conteúdo de código aberto. Mesmo que a ferramenta em si não seja de código aberto, como ferramenta OSINT, ela fornece acesso a conteúdo disponível abertamente, conhecido como inteligência de código aberto.
-História da OSINT
+
+### História da OSINT
+
 O termo OSINT foi originalmente usado pela comunidade militar e de inteligência para denotar atividades de inteligência que reúnem informações estrategicamente importantes e publicamente disponíveis sobre questões de segurança nacional.
+
 Na era da Guerra Fria, a espionagem se concentrava na obtenção de informações por meio de fontes humanas (HUMINT) ou sinais eletrônicos (SIGINT) e, na década de 1980, a OSINT ganhou destaque como um método adicional de coleta de inteligência.
+
 Com o advento da Internet, das mídias sociais e dos serviços digitais, a inteligência de código aberto concede acesso a vários recursos para reunir informações sobre todos os aspectos da infraestrutura de TI e dos funcionários de uma organização. As organizações de segurança estão percebendo que precisam coletar essas informações publicamente disponíveis para ficarem um passo à frente dos invasores.
+
 O objetivo principal de um CISO é encontrar informações que possam representar um risco para a organização. Isso permite que os CISOs reduzam o risco antes que um invasor explore uma ameaça. O OSINT deve ser usado em combinação com testes de penetração regulares, nos quais as informações descobertas por meio do OSINT são usadas para simular uma violação dos sistemas organizacionais.
-Como atacantes e defensores usam o OSINT
+
+**Como atacantes e defensores usam o OSINT**
+
 Há três usos comuns do OSINT: por cibercriminosos, por defensores cibernéticos e por aqueles que buscam monitorar e moldar a opinião pública.
+
 Como as equipes de segurança usam o OSINT
+
 Para testadores de penetração e equipes de segurança, a OSINT visa revelar informações públicas sobre ativos internos e outras informações acessíveis fora da organização. Os metadados publicados acidentalmente pela sua organização podem conter informações confidenciais.
+
 Por exemplo, informações úteis que podem ser reveladas por meio do OSINT incluem portas abertas; software sem patches com vulnerabilidades conhecidas; informações de TI disponíveis publicamente, como nomes de dispositivos, endereços IP e configurações; e outras informações vazadas pertencentes à organização.
+
 Sites fora da sua organização, especialmente mídias sociais, contêm grandes quantidades de informações relevantes, especialmente informações sobre funcionários. Fornecedores e parceiros também podem compartilhar detalhes específicos sobre o ambiente de TI de uma organização. Quando uma empresa adquire outras empresas, suas informações publicamente disponíveis também se tornam relevantes.
+
 Como os agentes de ameaças usam o OSINT
+
 Um uso comum do OSINT pelos atacantes é recuperar informações pessoais e profissionais sobre funcionários nas mídias sociais. Isso pode ser usado para criar campanhas de spear-phishing, direcionadas a indivíduos que têm acesso privilegiado aos recursos da empresa.
+
 O LinkedIn é um ótimo recurso para esse tipo de inteligência de código aberto, pois revela cargos e estrutura organizacional. Outros sites de redes sociais também são muito valiosos para os atacantes, pois divulgam informações como datas de nascimento, nomes de familiares e animais de estimação, que podem ser usadas em phishing e para adivinhar senhas.
+
 Outra tática comum é usar recursos de nuvem para escanear redes públicas em busca de ativos não corrigidos, portas abertas e armazenamentos de dados em nuvem mal configurados. Se um invasor souber o que está procurando, ele também poderá recuperar credenciais e outras informações vazadas de sites como o GitHub. Desenvolvedores que não se preocupam com a segurança podem incorporar senhas e chaves de criptografia em seu código, e os invasores podem identificar esses segredos por meio de pesquisas especializadas.
+
 Outros usos do OSINT
+
 Além da segurança cibernética, o OSINT também é frequentemente usado por organizações ou governos que buscam monitorar e influenciar a opinião pública. O OSINT pode ser usado para marketing, campanhas políticas e gerenciamento de desastres.
-Técnicas de coleta OSINT
+
+#### Técnicas de coleta OSINT
+
 Aqui estão três métodos comumente usados para obter dados de inteligência aberta.
-Coleção passiva
+
+**Coleção passiva**
+
 Essa é a maneira mais comumente usada de coletar inteligência OSINT. Envolve a coleta de sites disponíveis publicamente, a recuperação de dados de APIs abertas, como a API do Twitter, ou a extração de dados de fontes de informações da deep web. Os dados são então analisados e organizados para consumo.
-Semi-passivo
+
+**Semi-passivo**
+
 Esse tipo de coleção requer mais experiência. Ele direciona o tráfego para um servidor de destino para obter informações sobre o servidor. O tráfego do scanner deve ser semelhante ao tráfego normal da Internet para evitar a detecção.
-Coleção ativa
+
+**Coleção ativa**
+
 Esse tipo de coleta de informações interage diretamente com um sistema para coletar informações sobre ele. Os sistemas de coleta ativa usam tecnologias avançadas para acessar portas abertas e verificar se há vulnerabilidades em servidores ou aplicativos da Web.
+
 Esse tipo de coleta de dados pode ser detectado pelo alvo e revela o processo de reconhecimento. Ele deixa um rastro no firewall, no Sistema de Detecção de Intrusões (IDS) ou no Sistema de Prevenção de Intrusões (IPS) do alvo. Ataques de engenharia social a alvos também são considerados uma forma de coleta ativa de inteligência.
+
 Inteligência artificial: o futuro da OSINT?
+
 A tecnologia OSINT está avançando e muitos estão propondo o uso de inteligência artificial e aprendizado de máquina (AI/ML) para auxiliar na pesquisa do OSINT.
+
 De acordo com relatórios públicos, agências governamentais e agências de inteligência já estão usando inteligência artificial para coletar e analisar dados das mídias sociais. Organizações militares estão usando IA/ML para identificar e combater o terrorismo, o crime cibernético organizado, a falsa propaganda e outras questões de segurança nacional nos canais de mídia social.
+
 À medida que as técnicas de IA/ML se tornam disponíveis para o setor privado, elas podem ajudar com:
 •	Melhorando a fase de coleta de dados — filtrando ruídos e priorizando dados
 •	Melhorando a fase de análise de dados — correlacionando informações relevantes e identificando estruturas úteis
 •	Melhorando os insights acionáveis — a análise de IA/ML pode ser usada para revisar muito mais dados brutos do que os analistas humanos, obtendo mais insights acionáveis dos dados disponíveis.
+
 Ferramentas OSINT
+
 Aqui estão algumas das ferramentas OSINT mais populares.
-Maltego
+
+**Maltego**
 O Maltego faz parte do sistema operacional Kali Linux, comumente usado por testadores de penetração de rede e hackers. É de código aberto, mas requer registro na Paterva, fornecedora da solução. Os usuários podem executar uma “máquina”, um tipo de mecanismo de script, contra um alvo, configurando-a de acordo com as informações que desejam coletar.
 As principais características incluem:
 •	Transformações de dados integradas.
 •	Capacidade de escrever transformações personalizadas.
 •	Pegadas integradas que podem coletar informações de fontes e criar uma visualização de dados sobre um alvo.
-Pé de aranha
+
+**Spiderfoot**
 Spiderfoot é uma ferramenta OSINT gratuita disponível no Github. Ele se integra a várias fontes de dados e pode ser usado para coletar informações sobre uma organização, incluindo endereços de rede, detalhes de contato e credenciais.
 As principais características incluem:
 •	Coleta e analisa dados de rede, incluindo endereços IP, intervalos de roteamento entre domínios (CIDR) sem classes, domínios e subdomínios.
 •	Reúne endereços de e-mail, números de telefone e outros detalhes de contato.
 •	Coleta nomes de usuário para contas operadas por uma organização.
 •	Coleta endereços Bitcoin.
-Spyse
+
+**Spyse**
 O Spyse é um “mecanismo de busca de ativos da Internet”, projetado para profissionais de segurança. Ele coleta dados de fontes publicamente disponíveis, os analisa e identifica riscos de segurança.
 As principais características incluem:
 •	Coleta dados de sites, proprietários de sites e da infraestrutura em que eles estão sendo executados
 •	Coleta dados de dispositivos de IoT expostos publicamente
 •	Identifica conexões entre entidades
 •	Relatórios sobre dados expostos publicamente que representam um risco de segurança
-Inteligência X
+
+**Inteligência X**
 O Intelligence X é um serviço de arquivamento que preserva versões históricas de páginas da web que foram removidas por motivos legais ou devido à censura de conteúdo. Ele preserva qualquer tipo de conteúdo, por mais obscuro ou controverso que seja. Isso inclui não apenas dados censurados da Internet pública, mas também dados da dark web, wikileaks, sites governamentais de nações conhecidas por realizarem ataques cibernéticos e muitos outros vazamentos de dados.
 As principais características incluem:
 •	Pesquise endereços de e-mail ou outros detalhes de contato.
@@ -3578,7 +3713,8 @@ As principais características incluem:
 •	Dados Whois
 •	Dumpster: Todo o resto
 •	Web pública
-Construído com
+
+**Buildwith**
 A BuiltWith mantém um grande banco de dados de sites, que inclui informações sobre as pilhas de tecnologia usadas por cada site. Você pode combinar o BuiltWith com scanners de segurança para identificar vulnerabilidades específicas que afetam um site.
 As principais características incluem:
 •	Relatórios sobre o sistema de gerenciamento de conteúdo (CMS) em uso por um site, sua versão e plug-ins atualmente em uso.
@@ -3586,19 +3722,22 @@ As principais características incluem:
 •	Fornecendo uma lista das bibliotecas de JavaScript e CSS usadas pelo site.
 •	Fornecendo informações sobre o servidor web que executa o site.
 •	Fornecendo detalhes das ferramentas de análise e rastreamento implantadas por um site.
-Shodan
+
+**Shodan**
 O Shodan é uma solução de monitoramento de segurança que possibilita a pesquisa na deep web e nas redes IoT. Ele possibilita descobrir qualquer tipo de dispositivo conectado a uma rede, incluindo servidores, dispositivos eletrônicos inteligentes e webcams.
 As principais características incluem:
 •	Interface de mecanismo de pesquisa fácil de usar.
 •	Fornece informações sobre dispositivos que operam em protocolos como HTTP, SSH, FTP, SNMP, Telnet, RTSP e IMAP.
 •	Os resultados podem ser filtrados e ordenados por protocolo, portas de rede, região e sistema operacional.
 •	Acesso a uma grande variedade de dispositivos conectados, incluindo eletrodomésticos e serviços públicos, como semáforos e sistemas de controle de água.
-Fui penhorado
+
+**HaveIbeenPwned**
 O HaveIBeenPwned é um serviço que pode ser usado diretamente por consumidores afetados por violações de dados. Ele foi desenvolvido pelo pesquisador de segurança Troy Hunt.
 As principais características incluem:
 •	Identificar se um endereço de e-mail individual foi comprometido em alguma violação histórica.
 •	Verifique contas em serviços populares como LastFM, Kickstarter, WordPress.com e LinkedIn para ver se há exposição a violações de dados anteriores.
-Funcionamento do Google
+
+**Google dorking**
 O Google dorking não é exatamente uma ferramenta — é uma técnica comumente usada por profissionais de segurança e hackers para identificar dados privados expostos ou vulnerabilidades de segurança por meio do mecanismo de pesquisa do Google.
 O Google tem o maior banco de dados de conteúdo da Internet do mundo e fornece uma variedade de operadores de pesquisa avançada. Usando esses operadores de pesquisa, é possível identificar conteúdo que pode ser útil para os invasores.
 Aqui estão os operadores comumente usados para executar o Google Dorking:
@@ -3606,64 +3745,87 @@ Aqui estão os operadores comumente usados para executar o Google Dorking:
 •	Ext — da mesma forma, encontra arquivos expostos com extensões específicas que podem ser úteis em ataques (por exemplo, .log)
 •	Intitle/inURL — procura informações confidenciais no título ou URL de um documento. Por exemplo, qualquer URL contendo o termo “admin” pode ser útil para um invasor.
 •	Aspas — o operador de cotação permite pesquisar uma string específica. Os atacantes podem pesquisar uma variedade de sequências de caracteres que indicam problemas comuns do servidor ou outras vulnerabilidades.
+
 Melhores práticas de investigação de código aberto
+
 Aqui estão as melhores práticas que podem ajudar você a usar o OSINT de forma mais eficaz para defesa cibernética.
 Distinguir entre dados e inteligência
 Dados de código aberto (OSD) são informações brutas e não filtradas disponíveis em fontes públicas. Essa é a entrada do OSINT, mas, por si só, não é útil. A inteligência de código aberto (OSINT) é uma forma estruturada e empacotada de OSD que pode ser usada para atividades de segurança.
 Para praticar o OSINT com sucesso, você não deve se concentrar em coletar o máximo de dados possível. Concentre-se em identificar os dados necessários para uma investigação específica e refine sua pesquisa para recuperar somente as informações relevantes. Isso permitirá que você obtenha informações úteis a um custo menor e com menos esforço.
+
 Considere os requisitos de conformidade
+
 A maioria das organizações é coberta pelo Regulamento Geral de Proteção de Dados (GDPR) ou por outros regulamentos de privacidade. A OSINT geralmente coleta dados pessoais, que podem ser definidos como informações de identificação pessoal (PII). Coletar, armazenar e processar esses dados pode criar um risco de conformidade para sua organização.
 Além disso, se você descobrir a intenção criminosa em uma investigação da OSINT, pode haver requisitos legais específicos para expor esses dados. Por exemplo, no Reino Unido, expor informações que podem alertar um indivíduo sob investigação por lavagem de dinheiro pode levar a multas ilimitadas e tempo de prisão.
+
 Seja ético
+
 A OSINT depende de dados acessíveis ao público, mas o uso desses dados pode impactar as pessoas, tanto na sua organização quanto fora dela. Ao coletar dados, considere não apenas suas necessidades investigativas, mas também o impacto ético e regulatório dos dados. Limite a coleta de dados ao mínimo que possa ajudá-lo a atingir suas metas sem violar os direitos dos funcionários ou de outras pessoas.
 Permitir que a tecnologia colete dados ou escaneie sistemas “no piloto automático” geralmente resultará em coleta de dados antiética ou ilegal. Uma parte fundamental da OSINT ética é garantir que a coleta de dados seja controlada por humanos, com colaboração efetiva entre todas as partes interessadas. Todos os envolvidos no projeto OSINT devem compreender as restrições éticas e legais e devem trabalhar juntos para evitar problemas de privacidade e outras preocupações éticas.
-Noções básicas de segurança de banco de dados
+
+### Noções básicas de segurança de banco de dados
+
 A segurança do banco de dados é crucial para qualquer organização que depende de dados. Aqui estão alguns conceitos-chave para o exame CNSP:
+
 1. Controle de acesso
 •	Privilégio mínimo: conceda aos usuários somente os privilégios mínimos necessários para realizar suas funções de trabalho.
 •	Isso minimiza o impacto de uma conta comprometida.
 •	Controle de acesso baseado em funções (RBAC): atribua permissões com base nas funções e responsabilidades do usuário na organização.
 •	Autenticação e autorização: implemente métodos de autenticação fortes (por exemplo, senhas, autenticação multifatorial) e mecanismos de autorização para controlar o acesso a dados confidenciais.
-2. Criptografia de dados
+
+3. Criptografia de dados
 •	Dados em repouso: criptografe dados armazenados no servidor do banco de dados (por exemplo, usando Transparent Data Encryption - TDE).
 •	Dados em trânsito: criptografe os dados transmitidos entre o servidor do banco de dados e os aplicativos (por exemplo, usando SSL/TLS).
-3. Gerenciamento de vulnerabilidades
+
+5. Gerenciamento de vulnerabilidades
 •	Aplicação regular de patches: mantenha o software do banco de dados e os componentes relacionados atualizados com os patches e atualizações de segurança mais recentes.
 •	Verificação de vulnerabilidades: verifique regularmente o servidor do banco de dados e os aplicativos em busca de vulnerabilidades conhecidas.
 •	Teste de penetração: realize testes de penetração para identificar e explorar possíveis vulnerabilidades.
-4. Prevenção de perda de dados (DLP)
+
+7. Prevenção de perda de dados (DLP)
 •	Classificação de dados: classifique os dados com base na sensibilidade (por exemplo, confidenciais, confidenciais, públicos).
 •	Mascaramento de dados: substitua dados confidenciais por dados falsos ou mascarados para fins de teste e desenvolvimento.
 •	Descoberta de dados: identifique e localize dados confidenciais no banco de dados.
-5. Auditoria e monitoramento
+
+9. Auditoria e monitoramento
 •	Monitoramento da atividade do banco de dados: monitore a atividade do banco de dados em busca de comportamentos suspeitos, como tentativas incomuns de login, acesso excessivo a dados e tentativas de injeção de SQL.
 •	Análise de registros: analise os registros do banco de dados para identificar e investigar incidentes de segurança.
-6. Separação de deveres:
+
+11. Separação de deveres:
 •	Garanta que indivíduos diferentes sejam responsáveis por diferentes aspectos da administração do banco de dados (por exemplo, administradores de banco de dados, administradores de segurança).
-7. Segurança física:
+
+13. Segurança física:
 •	Proteja a segurança física do servidor de banco de dados implementando controles de acesso físico apropriados.
+
 Vulnerabilidades comuns:
+
 •	Injeção de SQL: os atacantes injetam código SQL malicioso nas consultas do banco de dados para obter acesso não autorizado ou manipular dados.
 •	Cross-Site Scripting (XSS): os atacantes injetam scripts maliciosos em aplicativos da web, que podem ser executados por outros usuários.
 •	Ataques de negação de serviço (DoS): ataques que visam sobrecarregar o servidor do banco de dados, tornando-o indisponível para usuários legítimos.
+
 Principais conclusões do CNSP
+
 •	Entenda a importância da segurança de dados em um contexto de banco de dados.
 •	Familiarize-se com as vulnerabilidades e ameaças comuns à segurança do banco de dados.
 •	Implemente controles de acesso e mecanismos de autenticação robustos.
 •	Audite e monitore regularmente a atividade do banco de dados.
 •	Mantenha-se informado sobre as mais recentes práticas recomendadas de segurança de banco de dados.
+
 Princípios básicos de segurança do TLS
+
 O TLS é um protocolo criptográfico projetado para garantir a privacidade e a integridade dos dados em redes de computadores. É crucial para uma comunicação segura, especialmente pela Internet. Aqui está um resumo dos principais conceitos:
 1. Funções principais:
 •	Criptografia: criptografa dados transmitidos entre duas partes, tornando-os ilegíveis para bisbilhoteiros.
 •	Autenticação: verifica a identidade das partes comunicantes (por exemplo, servidor do site, cliente).
 •	Integridade dos dados: garante que os dados transmitidos entre as partes não tenham sido adulterados.
-2. Conceitos chave:
+
+3. Conceitos chave:
 •	Criptografia assimétrica: usa um par de chaves: uma chave pública (compartilhada com todos) e uma chave privada (mantida em segredo). Os dados criptografados com a chave pública só podem ser descriptografados com a chave privada correspondente.
 •	Criptografia simétrica: usa uma única chave secreta compartilhada para criptografia e decodificação. A criptografia simétrica é mais rápida do que a criptografia assimétrica.
 •	Certificados digitais: documentos eletrônicos que vinculam uma chave pública a uma entidade (por exemplo, um servidor de site). Emitido por autoridades de certificação (CAs).
 •	Handshake: a fase inicial de negociação de uma conexão TLS, na qual o servidor e o cliente estabelecem um canal de comunicação seguro.
-3. Handshake TLS (simplificado)
+
+4. Handshake TLS (simplificado)
 1.	Atendimento ao cliente: O cliente inicia o handshake, enviando uma lista de pacotes de criptografia e versões de TLS compatíveis.
 2.	Olá do servidor: O servidor seleciona um conjunto de cifras e envia seu certificado ao cliente.
 3.	Troca de chaves de cliente: o cliente gera um segredo pré-mestre e o criptografa usando a chave pública do servidor.
@@ -3671,21 +3833,28 @@ O TLS é um protocolo criptográfico projetado para garantir a privacidade e a i
 5.	Especificação de cifra de alteração do cliente: o cliente notifica o servidor de que agora usará o conjunto de cifras negociado.
 6.	Mensagens de handshake criptografadas: o cliente e o servidor trocam mensagens criptografadas para estabelecer a chave de sessão compartilhada.
 7.	Dados do aplicativo: após a conclusão do handshake, os dados criptografados podem ser trocados entre o cliente e o servidor.
-4. Importância do TLS
+
+**Importância do TLS**
+
 •	Protegendo transações on-line: protege informações confidenciais, como números de cartão de crédito e dados pessoais, durante compras on-line.
 •	Garantindo a privacidade dos dados: evita a espionagem de comunicações on-line, como e-mails e navegação na web.
 •	Criando confiança: verifica a identidade de sites e outros serviços on-line.
+
 5. Versões e vulnerabilidades do TLS
 •	TLS 1.0, 1.1: versões mais antigas com vulnerabilidades conhecidas.
 •	TLS 1.2: Uma versão mais segura, mas ainda vulnerável a alguns ataques.
 •	TLS 1.3: a versão mais recente, oferecendo segurança, desempenho e privacidade aprimorados.
+
 Armazenamento de senhas
+
 Armazenar senhas com segurança é fundamental tanto para usuários individuais quanto para organizações. Aqui está um resumo dos principais conceitos e práticas recomendadas para ambientes Windows e Linux:
+
 1. Riscos de armazenar senhas de forma insegura:
 •	Violações de dados: se as senhas forem armazenadas em texto simples ou em arquivos de fácil acesso, uma violação bem-sucedida poderá comprometer várias contas.
 •	Roubo de identidade: senhas roubadas podem ser usadas para roubo de identidade, fraude financeira e outras atividades maliciosas.
 •	Comprometimento da conta: senhas comprometidas podem conceder aos invasores acesso a sistemas e dados confidenciais.
-2. Métodos seguros de armazenamento de senhas:
+
+3. Métodos seguros de armazenamento de senhas:
 •	Gerenciadores de senhas:
 o	Criptografia forte: utilize gerenciadores de senhas como LastPass, 1Password ou KeePass, que criptografam senhas usando algoritmos fortes.
 o	Armazenamento centralizado: armazene todas as suas senhas com segurança em um único cofre criptografado.
@@ -3696,7 +3865,8 @@ o	Linux: utilize ferramentas como o gpg (GNU Privacy Guard) para criptografar e 
 •	Módulos de segurança de hardware (HSMs):
 o	Dispositivos de alta segurança que podem gerar, armazenar e gerenciar chaves criptográficas.
 o	Usado principalmente em ambientes corporativos para necessidades de alta segurança.
-3. Práticas recomendadas para armazenamento de senhas:
+
+5. Práticas recomendadas para armazenamento de senhas:
 •	Senhas fortes: use senhas fortes e exclusivas para cada conta.
 •	Alterações regulares de senha: altere regularmente as senhas de contas críticas.
 •	Autenticação multifatorial (MFA): implemente a MFA sempre que possível para adicionar uma camada extra de segurança.
