@@ -13,9 +13,9 @@ Exam syllabus
 The exam will cover the following topics
 
 - TCP/IP (Protocols and Networking Basics)
-   *OSI Layer
-   *IPv4 and IPv6 addresses
-   *Router, Switch and Hub
+   - OSI Layer
+   - IPv4 and IPv6 addresses
+   - Router, Switch and Hub
 - Network Discovery Protocols
 - Network Architectures, Mapping and Target Identification
 - Network Scanning & Fingerprinting
