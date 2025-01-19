@@ -9,6 +9,30 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Exam syllabus
+The exam will cover the following topics
+
+TCP/IP (Protocols and Networking Basics)
+ *OSI Layer
+ *IPv4 and IPv6 addresses
+ *Router, Switch and Hub
+Network Discovery Protocols
+Network Architectures, Mapping and Target Identification
+Network Scanning & Fingerprinting
+Testing Network Services
+Cryptography
+Active Directory Security Basics
+Linux and Windows Security Basics
+Common vulnerabilities affecting Windows Services
+Testing Web Servers and Frameworks
+Basic Malware Analysis
+Social Engineering attacks
+Network Security Tools and Frameworks (such as Nmap, Wireshark etc)
+Open-Source Intelligence Gathering (OSINT)
+Database Security Basics
+TLS Security Basics
+Password Storage
+
 ### [TCP/IP (Protocols and Networking Basics)](#ingles)
 
 The TCP/IP model is a fundamental framework for computer networking. It stands for Transmission Control Protocol/Internet Protocol, which are the core protocols of the Internet. This model defines how data is transmitted over networks, ensuring reliable communication between devices. It consists of four layers: the Link Layer, the Internet Layer, the Transport Layer, and the Application Layer. Each layer has specific functions that help manage different aspects of network communication, making it essential for understanding and working with modern networks.
