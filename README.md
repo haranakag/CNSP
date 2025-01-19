@@ -12,26 +12,26 @@
 Exam syllabus
 The exam will cover the following topics
 
-TCP/IP (Protocols and Networking Basics)
- *OSI Layer
- *IPv4 and IPv6 addresses
- *Router, Switch and Hub
-Network Discovery Protocols
-Network Architectures, Mapping and Target Identification
-Network Scanning & Fingerprinting
-Testing Network Services
-Cryptography
-Active Directory Security Basics
-Linux and Windows Security Basics
-Common vulnerabilities affecting Windows Services
-Testing Web Servers and Frameworks
-Basic Malware Analysis
-Social Engineering attacks
-Network Security Tools and Frameworks (such as Nmap, Wireshark etc)
-Open-Source Intelligence Gathering (OSINT)
-Database Security Basics
-TLS Security Basics
-Password Storage
+- TCP/IP (Protocols and Networking Basics)
+   *OSI Layer
+   *IPv4 and IPv6 addresses
+   *Router, Switch and Hub
+- Network Discovery Protocols
+- Network Architectures, Mapping and Target Identification
+- Network Scanning & Fingerprinting
+- Testing Network Services
+- Cryptography
+- Active Directory Security Basics
+- Linux and Windows Security Basics
+- Common vulnerabilities affecting Windows Services
+- Testing Web Servers and Frameworks
+- Basic Malware Analysis
+- Social Engineering attacks
+- Network Security Tools and Frameworks (such as Nmap, Wireshark etc)
+- Open-Source Intelligence Gathering (OSINT)
+- Database Security Basics
+- TLS Security Basics
+- Password Storage
 
 ### [TCP/IP (Protocols and Networking Basics)](#ingles)
 
