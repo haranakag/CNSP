@@ -10,6 +10,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Exam syllabus
+
 The exam will cover the following topics
 
 - TCP/IP (Protocols and Networking Basics)
@@ -2118,6 +2119,30 @@ Securely storing passwords is critical for individual users and organizations al
 * Regularly review and update security settings: Ensure that your password manager and other security tools are up-to-date with the latest security patches.
 
 ------------------------------------------------------------------------------------------------------------------------------
+### Programa do exame
+
+O exame cobrirá os seguintes tópicos
+
+- TCP/IP (Protocolos e noções básicas de rede)
+- Camada OSI
+- Endereços IPv4 e IPv6
+- Roteador, Switch e Hub
+- Protocolos de descoberta de rede
+- Arquiteturas de rede, mapeamento e identificação de alvos
+- Digitalização e impressão digital de rede
+- Teste de serviços de rede
+- Criptografia
+- Noções básicas de segurança do Active Directory
+- Noções básicas de segurança do Linux e Windows
+- Vulnerabilidades comuns que afetam os serviços do Windows
+- Teste de servidores e estruturas da Web
+- Análise básica de malware
+- Ataques de engenharia social
+- Ferramentas e estruturas de segurança de rede (como Nmap, Wireshark etc.)
+- Coleta de inteligência de código aberto (OSINT)
+- Noções básicas de segurança de banco de dados
+- Noções básicas de segurança TLS
+- Armazenamento de senhas
 
 ## TCP/IP (princípios básicos de protocolos e redes)
 O modelo TCP/IP é um framework fundamental para redes de computadores. Significa Transmission Control Protocol/Internet Protocol, que são os principais protocolos da Internet. 
@@ -2357,7 +2382,7 @@ Funções da camada de transporte
 
 •	Endereçamento do ponto de serviço: Para entregar a mensagem ao processo correto, o cabeçalho da camada de transporte inclui um tipo de endereço chamado endereço do ponto de serviço ou endereço da porta. Assim, ao especificar esse endereço, a camada de transporte garante que a mensagem seja entregue ao processo correto.
 
-Serviços fornecidos pela Transport Layer
+Serviços fornecidos pela camada de transporte
 
 •	Serviço orientado à conexão
 •	Serviço sem conexão
